@@ -1,0 +1,32 @@
+@charset "utf-8";
+@keyframes up {
+    0% {opacity: 0; transform: translateY(150px);}
+    100% {opacity: 1; transform: translateY(0);}
+}
+@keyframes moreUp {
+    0% {opacity: 1; transform: translateY(0);}
+    100% {opacity: 0; transform: translateY(-150px);}
+}
+@keyframes down {
+    0% {opacity: 0; transform: translateY(-150px);}
+    100% {opacity: 1; transform: translateY(0);}
+}
+@keyframes moreDown {
+    0% {opacity: 1; transform: translateY(0px);}
+    100% {opacity: 0; transform: translateY(150px);}
+}
+
+#board{position: fixed; top: 30px; left: 30px; max-width: 760px; width: 40%; height: calc(100% - 60px); background: rgba(0, 0, 0, 0.3); z-index: 1;}
+#board > div{position: relative;}
+#board > div > h2{position: absolute; top: 30px; left: 50%; padding-right: 43px; font-size: 17px; display: none;}
+#board > div > h2:after{content: ''; position: absolute; top: 50%; right: 0; width: 40px; height: 2px; background: #222;}
+#board > div > div.detail{width: 100%; position: absolute; top: 200px; padding: 0 13%; opacity: 0; cursor: default; display: none;}
+#board > div > div.detail > span.num-now{display: inline-block; font-size: 17px;}
+#board > div > div.detail > h3{font-size: 70px;}
+#board > div > div.detail > span.type {display: inline-block; font-size: 25px; font-weight: 700; margin-bottom: 60px;}
+
+/*#board animation class*/
+#board > div.up > div.detail{animation: up 0.5s forwards;}
+#board > div.moreUp > div.detail{animation: moreUp 0.5s forwards;}
+#board > div.down > div.detail{animation: down 0.5s forwards;}
+#board > div.moreDown > div.detail{animation: moreDown 0.5s forwards;}
