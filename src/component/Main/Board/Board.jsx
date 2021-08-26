@@ -9,15 +9,16 @@ import Fourth from './Fourth/Fourth';
 // css
 import './Board.css';
 
-const Board = () => {
-
+const Board = ({ BoardRef, PagingTop, fixedBoxRefArray }) => {
+    
     return(
-        <div id="board">
-            <Home />
-            <About />
-            <Second />
-            <Third />
-            <Fourth />
+        <div id="board" ref={BoardRef}>
+            <div id='fp-nav-duplication'><i style={{ top: PagingTop }}></i></div>
+            <Home HomeFixedBoxRef={fixedBoxRefArray[0]} />
+            <About AboutFixedBoxRef={fixedBoxRefArray[1]} />
+            <Second SecondFixedBoxRef={fixedBoxRefArray[2]} />
+            <Third ThirdFixedBoxRef={fixedBoxRefArray[3]} />
+            <Fourth FourthFixedBoxRef={fixedBoxRefArray[4]} />
         </div>       
     )
 }

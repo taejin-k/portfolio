@@ -38,7 +38,7 @@ const Header = () => {
 				</button>
 			</div>
 
-			<nav className='nav'>
+			<nav id='gnb' className='nav'>
 				<ul>
 					{
 						menuLists.map((menuList, index) => {

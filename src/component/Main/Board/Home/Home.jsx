@@ -1,10 +1,10 @@
 // css
 import './Home.css';
 
-const Home = () => {
+const Home = ({ HomeFixedBoxRef }) => {
 
     return(
-        <div id='home' className="fixed-box up">
+        <div id='home' className="fixed-box up" ref={HomeFixedBoxRef}>
             <h2>Home</h2>
             <div className="detail">
                 <h3>****<br />PORTFOLIO</h3>
