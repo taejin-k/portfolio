@@ -1,14 +1,12 @@
 // react
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 // css
 import './Header.css';
 
-const Header = () => {
+const Header = ({ ActiveName, setActiveName }) => {
 
 	const [ MenuOpen, setMenuOpen ] = useState(false);
-	const [ ActiveName, setActiveName ] = useState('home');
 	const menuLists = [
 		{id: 1, name: 'home', title: 'HOME'},
 		{id: 2, name: 'about', title: 'ABOUT'},
@@ -44,7 +42,7 @@ const Header = () => {
 						menuLists.map((menuList, index) => {
 							return(
 								<li key={index} className={ActiveName === menuList.name ? 'on' : ''}>
-									<Link to={`#${menuList.name}`} data-menuanchor={`${menuList.name}_page`} onClick={() => menuClose(menuList.name)}>{menuList.title}</Link>
+									<span data-menuanchor={`${menuList.name}_page`} onClick={() => menuClose(menuList.name)}>{menuList.title}</span>
 								</li>
 							)
 						})

@@ -1,16 +1,12 @@
 // css
 import './Third.css';
 
-const Third = ({ ThirdFixedBoxRef }) => {
+const Third = ({ ResultBoardWidth }) => {
 
     return(
-        <div id='third' className="fixed-box" ref={ThirdFixedBoxRef}>
-            <h2>Third</h2>
-            <div className="detail">
-                <span className="num-now"># 03</span>
-                <h3>THIRD</h3>
-                <span className="type">RESPONSIVE WEBSITE</span>
-            </div>
+        <div className="section" id="third" data-anchor="third_page">
+            <div className="background"></div>
+            <div className="result_board" style={{ width: ResultBoardWidth }}></div>
         </div>
     )
 }

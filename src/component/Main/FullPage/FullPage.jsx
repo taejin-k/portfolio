@@ -2,9 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 
-// redux
-import { useSelector } from 'react-redux';
-
 // component
 import Home from './Home/Home';
 import About from './About/About';
@@ -15,9 +12,7 @@ import Fourth from './Fourth/Fourth';
 // css
 import './FullPage.css';
 
-const FullPage = ({ BoardRef, setPagingTop, fixedBoxRefArray }) => {
-
-    const selectMenu = useSelector(state => state.AboutMenuClick)
+const FullPage = ({ BoardRef, setPagingTop, fixedBoxRefArray, setActiveName }) => {
 
     function getWindowWidth() {
       const { innerWidth: width } = window;
@@ -81,30 +76,39 @@ const FullPage = ({ BoardRef, setPagingTop, fixedBoxRefArray }) => {
           // Home
           if(destination.index === 0 && direction === 'up'){
             fullpage_slide('13.5%', origin.index, 'moreDown', destination.index, 'down');
+            setActiveName('home');
             
           // About
           }else if(destination.index === 1 && direction === 'up'){
             fullpage_slide('31.5%', origin.index, 'moreDown', destination.index, 'down');
+            setActiveName('about');
           }else if(destination.index === 1 && direction === 'down'){
             fullpage_slide('31.5%', origin.index, 'moreUp', destination.index, 'up');
+            setActiveName('about');
             
           // Second
           }else if(destination.index === 2 && direction === 'up'){
             fullpage_slide('49%', origin.index, 'moreDown', destination.index, 'down');
+            setActiveName('second');
           }else if(destination.index === 2 && direction === 'down'){
             fullpage_slide('49%', origin.index, 'moreUp', destination.index, 'up');
+            setActiveName('second');
             
           // Third
           }else if(destination.index === 3 && direction === 'up'){
             fullpage_slide('67%', origin.index, 'moreDown', destination.index, 'down');
+            setActiveName('third');
           }else if(destination.index === 3 && direction === 'down'){
             fullpage_slide('67%', origin.index, 'moreUp', destination.index, 'up');
+            setActiveName('third');
             
           // Fourth
           }else if(destination.index === 4 && direction === 'up'){
             fullpage_slide('84.5%', origin.index, 'moreDown', destination.index, 'down');
+            setActiveName('fourth');
           }else if(destination.index === 4 && direction === 'down'){
             fullpage_slide('84.5%', origin.index, 'moreUp', destination.index, 'up');
+            setActiveName('fourth');
           }
 
         }}
@@ -112,28 +116,11 @@ const FullPage = ({ BoardRef, setPagingTop, fixedBoxRefArray }) => {
         render={() => {
           return (
             <div>
-
               <Home ResultBoardWidth={ResultBoardWidth}/>
               <About ResultBoardWidth={ResultBoardWidth}/>
               <Second ResultBoardWidth={ResultBoardWidth}/>
               <Third ResultBoardWidth={ResultBoardWidth}/>
               <Fourth ResultBoardWidth={ResultBoardWidth}/>
-
-              <div className="section" id="second" data-anchor="second_page">
-                <div className="background"></div>
-                <div className="result_board" style={{ width: ResultBoardWidth }}></div>
-              </div>
-
-              <div className="section" id="third" data-anchor="third_page">
-                <div className="background"></div>
-                <div className="result_board" style={{ width: ResultBoardWidth }}></div>
-              </div>
-
-              <div className="section" id="fourth" data-anchor="fourth_page">
-                <div className="background"></div>
-                <div className="result_board" style={{ width: ResultBoardWidth }}></div>
-              </div>
-
             </div>
           );
         }}

@@ -1,16 +1,12 @@
 // css
 import './Fourth.css';
 
-const Fourth = ({ FourthFixedBoxRef }) => {
+const Fourth = ({ ResultBoardWidth }) => {
 
     return(
-        <div id='fourth' className="fixed-box" ref={FourthFixedBoxRef}>
-            <h2>Fourth</h2>
-            <div className="detail">
-                <span className="num-now"># 04</span>
-                <h3>FOURTH</h3>
-                <span className="type">RESPONSIVE WEBSITE</span>
-            </div>
+        <div className="section" id="fourth" data-anchor="fourth_page">
+            <div className="background"></div>
+            <div className="result_board" style={{ width: ResultBoardWidth }}></div>
         </div>
     )
 }
