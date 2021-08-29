@@ -22,13 +22,12 @@ const About = ({ AboutFixedBoxRef }) => {
                     <div className="one">
                         <div data-name="profile" className={selectMenu.select === 'profile' ? 'on' : ''} onClick={() => aboutMenuClick('profile')}>Profile</div>
                     </div>
-                    <div className="two">
+                    <div className="one">
                         <div data-name="design" className={selectMenu.select === 'design' ? 'on' : ''} onClick={() => aboutMenuClick('design')}>Design</div>
-                        <div data-name="front_end" className={selectMenu.select === 'front_end' ? 'on' : ''} onClick={() => aboutMenuClick('front_end')}>Front-end</div>
                     </div>
                     <div className="two">
+                        <div data-name="front_end" className={selectMenu.select === 'front_end' ? 'on' : ''} onClick={() => aboutMenuClick('front_end')}>Front-end</div>
                         <div data-name="back_end" className={selectMenu.select === 'back_end' ? 'on' : ''} onClick={() => aboutMenuClick('back_end')}>Back-end</div>
-                        <div data-name="crawling" className={selectMenu.select === 'crawling' ? 'on' : ''} onClick={() => aboutMenuClick('crawling')}>Crawling</div>
                     </div>
                     <div className="one">
                         <div data-name="etc" className={selectMenu.select === 'etc' ? 'on' : ''} onClick={() => aboutMenuClick('etc')}>Etc</div>

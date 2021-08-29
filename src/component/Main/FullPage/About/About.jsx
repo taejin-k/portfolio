@@ -6,7 +6,6 @@ import Profile from './Profile/Profile';
 import Design from './Design/Design';
 import FrontEnd from './FrontEnd/FrontEnd';
 import BackEnd from './BackEnd/BackEnd';
-import Crawling from './Crawling/Crawling';
 import Etc from './Etc/Etc';
 
 // css
@@ -24,7 +23,6 @@ const About = ({ ResultBoardWidth }) => {
                 {selectMenu.select === 'design' && <Design />}
                 {selectMenu.select === 'front_end' && <FrontEnd />}
                 {selectMenu.select === 'back_end' && <BackEnd />}
-                {selectMenu.select === 'crawling' && <Crawling />}
                 {selectMenu.select === 'etc' && <Etc />}
             </div>
             </div>
