@@ -18,7 +18,7 @@
 
 #board{position: fixed; top: 30px; left: 30px; max-width: 760px; width: 40%; height: calc(100% - 60px); background: rgba(0, 0, 0, 0.3); z-index: 1;}
 #board > #fp-nav-duplication{width: 274px; height: 322px; position: fixed; z-index: 100; top: 50%; opacity: 1; transform: translateY(-50%); -ms-transform: translateY(-50%); -webkit-transform: translate3d(0,-50%,0); right: -85px;}
-#board > #fp-nav-duplication > i{display: block; width: 30px; height: 30px; border: 2px solid #000; border-radius: 50%; position: absolute; top: 13.5%; left: 48.5%; transform: translate(-50%, -50%); transition: 1s; transition-timing-function: ease;}
+#board > #fp-nav-duplication > i{display: block; width: 30px; height: 30px; border: 2px solid #000; border-radius: 50%; position: absolute; top: 22.5%; left: 48.5%; transform: translate(-50%, -50%); transition: 1s; transition-timing-function: ease;}
 #board > div{position: relative;}
 #board > div > h2{position: absolute; top: 30px; left: 50%; padding-right: 43px; font-size: 17px; display: none;}
 #board > div > h2:after{content: ''; position: absolute; top: 50%; right: 0; width: 40px; height: 2px; background: #222;}

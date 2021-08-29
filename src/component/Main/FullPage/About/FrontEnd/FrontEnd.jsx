@@ -26,7 +26,7 @@ const FrontEnd = () => {
                         </div>
                         <div>
                             <div className="img"><img src='/img/sass.png' alt="sass"/></div>
-                            <p>Sass</p>
+                            <p>SASS</p>
                         </div>
                         <div>
                             <div className="img"><img src='/img/jquery.png' alt="jquery"/></div>

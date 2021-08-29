@@ -1,14 +1,14 @@
 // css
-import './Third.css';
+import './End.css';
 
-const Third = ({ ResultBoardWidth }) => {
+const End = ({ ResultBoardWidth }) => {
 
     return(
-        <div className="section" id="third" data-anchor="third_page">
+        <div className="section" id="end" data-anchor="end_page">
             <div className="background"></div>
             <div className="result_board" style={{ width: ResultBoardWidth }}></div>
         </div>
     )
 }
 
-export default Third;
+export default End;

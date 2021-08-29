@@ -1,9 +1,8 @@
 // component
 import Home from './Home/Home';
 import About from './About/About';
-import Second from './Second/Second';
-import Third from './Third/Third';
-import Fourth from './Fourth/Fourth';
+import Project from './Project/Project';
+import End from './End/End';
 
 
 // css
@@ -16,9 +15,8 @@ const Board = ({ BoardRef, PagingTop, fixedBoxRefArray }) => {
             <div id='fp-nav-duplication'><i style={{ top: PagingTop }}></i></div>
             <Home HomeFixedBoxRef={fixedBoxRefArray[0]} />
             <About AboutFixedBoxRef={fixedBoxRefArray[1]} />
-            <Second SecondFixedBoxRef={fixedBoxRefArray[2]} />
-            <Third ThirdFixedBoxRef={fixedBoxRefArray[3]} />
-            <Fourth FourthFixedBoxRef={fixedBoxRefArray[4]} />
+            <Project ProjectFixedBoxRef={fixedBoxRefArray[2]} />
+            <End EndFixedBoxRef={fixedBoxRefArray[3]} />
         </div>       
     )
 }

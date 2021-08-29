@@ -10,9 +10,8 @@ const Header = ({ ActiveName, setActiveName }) => {
 	const menuLists = [
 		{id: 1, name: 'home', title: 'HOME'},
 		{id: 2, name: 'about', title: 'ABOUT'},
-		{id: 3, name: 'second', title: 'SECOND'},
-		{id: 4, name: 'third', title: 'THIRD'},
-		{id: 5, name: 'fourth', title: 'FOURTH'}
+		{id: 3, name: 'project', title: 'PROJECT'},
+		{id: 4, name: 'end', title: 'END'},
 	]
 
 	const menuOpenClose = () => {
