@@ -1,0 +1,18 @@
+@keyframes type {
+    from{box-shadow: inset -3px 0px 0px #fff;}
+    to{box-shadow: inset -3px 0px 0px transparent;}
+}
+@keyframes slideDown {
+    to{top: 0; height: 100vh;}
+}
+@keyframes slideUp {
+    to{top: -60px; height: 0vh;}
+}
+
+.not_found_wrap{background: #343a40; font-family: 'Lato', sans-serif; color: #fff; margin: 0; display: table; width: 100%; text-align: center; position: fixed; left: 0; z-index: 99999; animation: slideUp 1s backwards; transition: 1s;}
+.fof{display: table-cell; vertical-align: middle;}
+.fof_h1{font-size: 50px; display: inline-block; padding-right: 12px; animation: type .5s alternate infinite;}
+
+@media screen and (max-width: 1340px) {
+    .not_found_wrap{animation: slideDown 1s backwards;}
+}

@@ -1,5 +1,5 @@
 /*.main #board > div#home*/
 #board > #home > h2{display: block;}
 #board > #home > div.detail{top: 400px; padding-left: 13%; display: block;}
-#board > #home > div.detail > h3{font-size: 80px;}
+#board > #home > div.detail > h3{font-size: 70px;}
 #board > #home > div.detail > p.text{font-size: 18px; font-family: 'Noto Sans KR', sans-serif;}
