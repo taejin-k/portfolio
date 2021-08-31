@@ -1,14 +1,56 @@
 // react
 import Slider from 'react-slick';
 
+// redux
+import { useSelector, useDispatch } from 'react-redux';
+import { SetSlideNumber } from '../../../../action';
+
+// component
+import Slide from './Slide/Slide';
+
 // css
 import './Project.css';
 
+// json
+import ProjectArrays from './json/ProjectArray.json';
+
+
 const Project = ({ ProjectFixedBoxRef }) => {
 
+    const dispatch = useDispatch();
+    const setCount = (number) => { dispatch(SetSlideNumber(number)) }
+    const Count = useSelector(state => state.SetSlideNumber)
+
     const setting = {
-        speed: 500
+        speed: 500,
+        swipeToSlide: true,
+        afterChange: (index) => {setCount(index);},
+        beforeChange: (index) => {setCount(index);}
     }
+
+    const maxNumber = () => {
+        let number = ProjectArrays.length;
+
+        if ( number < 10 ) {
+            number = "0" + String(number);
+        } else {
+            String(number);
+        }
+
+        return number
+    }
+    const currentNumber = () => {
+        let number = Count.number + 1;
+
+        if ( number < 10 ) {
+            number = "0" + String(number);
+        } else {
+            String(number);
+        }
+
+        return number
+    }
+
     return(
         <div id='project' className="fixed-box" ref={ProjectFixedBoxRef}>
             <h2>Project</h2>
@@ -16,22 +58,16 @@ const Project = ({ ProjectFixedBoxRef }) => {
                 <span className="num-now"># 02</span>
                 <h3>PROJECT</h3>
                 <span className="type">INTRODUCING MY PROJECT</span>
-                <p className='number'># 01/14</p>
+                <p className='number'><span># {currentNumber()} / {maxNumber()}</span><span>클릭해서 슬라이드를 넘겨주세요</span></p>
+
                 <Slider {...setting}>
-                    <div className='slide'>
-                        <p className='name'>로또블루</p>
-                        <p className='skill'>HTML / CSS / JAVASCRIPT(JQUERY)</p>
-                        <p className='desc'>피플아이(주)에서 퍼블리싱을 담당한 로또 추천 페이지입니다.<br /> PC 페이지와 MOBILE 페이지가 따로 제작되었습니다.</p>
-                        <div className='link'>
-                            <a href='https://lottoblue.co.kr/'>PC VIEW</a>
-                            <a href='https://m.lottoblue.co.kr/'>MOBILE VIEW</a>
-                        </div>
-                    </div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    {
+                        ProjectArrays.map((ProjectArray) => {
+                            return <Slide key={ProjectArray.id} ProjectArray={ProjectArray} />
+                        })
+                    }
                 </Slider>
+
             </div>
         </div>
     )

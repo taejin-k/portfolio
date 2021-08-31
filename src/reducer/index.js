@@ -1,4 +1,5 @@
 import { ABOUT_MENU_CLICK } from '../action';
+import { SET_SLIDE_NUMBER } from '../action';
 import { combineReducers } from 'redux';
 
 let AboutMenuClickInit = {
@@ -15,8 +16,23 @@ const AboutMenuClick = (state = AboutMenuClickInit, action ) => {
     }
 }
 
+let SetSlideNumberInit = {
+    number: 0
+}
+
+const SetSlideNumber = (state = SetSlideNumberInit, action) => {
+    switch(action.type) {
+        case SET_SLIDE_NUMBER:
+            return {
+                ...state, number: action.payload
+            }
+        default:
+            return state;
+    }
+}
+
 const ReducersApp = combineReducers({
-    AboutMenuClick
+    AboutMenuClick, SetSlideNumber
 });
 
 export default ReducersApp;

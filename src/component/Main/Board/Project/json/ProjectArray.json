@@ -1,0 +1,79 @@
+[
+	{
+		"id": 0,
+		"name": "로또블루",
+		"skill": "HTML / CSS / JAVASCRIPT(JQUERY)",
+		"desc": [
+			"퍼블리싱을 담당한 로또 추천 페이지입니다.",
+			"PC 페이지와 MOBILE 페이지가 따로 제작되었습니다."
+		],
+		"link": [
+			{ "url": "https://lottoblue.co.kr/", "button": "PC VIEW" },
+			{ "url": "https://m.lottoblue.co.kr/", "button": "MOBILE VIEW" }
+		]
+	},
+	{
+		"id": 1,
+		"name": "키움로또",
+		"skill": "HTML / CSS / JAVASCRIPT(JQUERY)",
+		"desc": [
+			"퍼블리싱을 담당한 로또 추천 페이지입니다.",
+			"PC 페이지와 MOBILE 페이지가 따로 제작되었습니다."
+		],
+		"link": [
+			{ "url": "https://kiumlotto.co.kr/", "button": "PC VIEW" },
+			{ "url": "https://m.kiumlotto.co.kr/", "button": "MOBILE VIEW" }
+		]
+	},
+	{
+		"id": 2,
+		"name": "지니로또",
+		"skill": "HTML / CSS / JAVASCRIPT(JQUERY)",
+		"desc": [
+			"퍼블리싱을 담당한 로또 추천 페이지입니다.",
+			"PC 페이지와 MOBILE 페이지가 따로 제작되었습니다.",
+		  	"MOBILE 페이지는 MOBILE에서 접속해주세요."
+		],
+		"link": [
+			{ "url": "https://genielotto.co.kr/", "button": "PC VIEW" },
+			{ "url": "https://m.genielotto.co.kr/", "button": "MOBILE VIEW" }
+		]
+	},
+	{
+		"id": 3,
+		"name": "웰컴로또",
+		"skill": "HTML / CSS / JAVASCRIPT(JQUERY)",
+		"desc": [
+			"퍼블리싱을 담당한 로또 추천 페이지입니다.",
+			"반응형 페이지로 작업되었습니다."
+		],
+		"link": [
+			{ "url": "https://welcomelotto.co.kr/", "button": "VIEW" }
+		]
+	},
+	{
+		"id": 4,
+		"name": "로또비전",
+		"skill": "HTML / CSS / JAVASCRIPT(JQUERY)",
+		"desc": [
+			"퍼블리싱을 담당한 로또 추천 페이지입니다.",
+			"반응형 페이지로 작업되었습니다."
+		],
+		"link": [
+			{ "url": "https://https://lottovision.kr/", "button": "VIEW" }
+		]
+	},
+	{
+		"id": 5,
+		"name": "알림몬",
+		"skill": "HTML / CSS / JAVASCRIPT(JQUERY) / PYTHON",
+		"desc": [
+			"퍼블리싱 및 개발을 담당한 문자 서비스 페이지입니다.",
+			"처음으로 PYTHON을 사용해본 페이지로 회원가입, 로그인, 개인정보수정 등 회원관련 부분을 개발했습니다."
+		],
+		"link": [
+			{ "url": "http://allimmon.com/", "button": "VIEW" }
+
+		]
+	}
+]
