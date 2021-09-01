@@ -14,15 +14,19 @@ const Slide = ({ ProjectArray }) => {
                     )
                 })
             }
-            <div className='link'>
-                {
-                    ProjectArray.link.map((link, index) => {
-                        return (
-                            <a key={index} href={link.url} target='blank'>{link.button}</a>                  
-                        )
-                    })
-                }
-            </div>
+            {
+                ProjectArray.link !== undefined &&
+                    <div className='link'>
+                        {
+                            ProjectArray.link.map((link, index) => {
+                                return (
+                                    <a key={index} href={link.url} target='blank'>{link.button}</a>                  
+                                )
+                            })
+                        }
+                    </div>
+            }
+            
         </div>
     )
 }

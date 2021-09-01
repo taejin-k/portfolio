@@ -2,11 +2,3 @@
 #fullpage .section#project .result_board > .content > p{font-size: 5.6rem; margin-bottom: 60px; font-weight: bold;}
 #fullpage .section#project .result_board > .content > div{width: 100%; max-height: calc(100% - 126px); box-shadow: 5px 5px 40px 3px #222; overflow: hidden;}
 #fullpage .section#project .result_board > .content > div > img{width: 100%;}
-
-/* img */
-/* .content > div.img_0{background: url(./img/lottoblue.jpg) no-repeat top center; background-size: cover; opacity: 1 !important;}
-.content > div.img_1{background: url(./img/kiumlotto.jpg) no-repeat top center; background-size: cover; opacity: 1 !important;}
-.content > div.img_2{background: url(./img/genielotto.jpg) no-repeat top center; background-size: cover; opacity: 1 !important;}
-.content > div.img_3{background: url(./img/welcomelotto.jpg) no-repeat top center; background-size: cover; opacity: 1 !important;}
-.content > div.img_4{background: url(./img/lottovision.jpg) no-repeat top center; background-size: cover; opacity: 1 !important;}
-.content > div.img_5{background: url(./img/allimmon.jpg) no-repeat top center; background-size: cover; opacity: 1 !important;} */
