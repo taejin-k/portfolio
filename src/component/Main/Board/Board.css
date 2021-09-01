@@ -1,28 +1,28 @@
 @charset "utf-8";
 @keyframes up {
     0% {opacity: 0; transform: translateY(150px);}
-    100% {opacity: 1; transform: translateY(0);}
+    100% {opacity: 1; transform: translateY(-50%);}
 }
 @keyframes moreUp {
-    0% {opacity: 1; transform: translateY(0);}
+    0% {opacity: 1; transform: translateY(-50%);}
     100% {opacity: 0; transform: translateY(-150px);}
 }
 @keyframes down {
     0% {opacity: 0; transform: translateY(-150px);}
-    100% {opacity: 1; transform: translateY(0);}
+    100% {opacity: 1; transform: translateY(-50%);}
 }
 @keyframes moreDown {
-    0% {opacity: 1; transform: translateY(0px);}
+    0% {opacity: 1; transform: translateY(-50%);}
     100% {opacity: 0; transform: translateY(150px);}
 }
 
 #board{position: fixed; top: 30px; left: 30px; max-width: 760px; width: 40%; height: calc(100% - 60px); background: rgba(0, 0, 0, 0.3); z-index: 1;}
 #board > #fp-nav-duplication{width: 274px; height: 322px; position: fixed; z-index: 100; top: 50%; opacity: 1; transform: translateY(-50%); -ms-transform: translateY(-50%); -webkit-transform: translate3d(0,-50%,0); right: -85px;}
 #board > #fp-nav-duplication > i{display: block; width: 30px; height: 30px; border: 2px solid #000; border-radius: 50%; position: absolute; top: 22.5%; left: 48.5%; transform: translate(-50%, -50%); transition: 1s; transition-timing-function: ease;}
-#board > div{position: relative;}
+#board > div{position: absolute; width: 100%; height: 100%;}
 #board > div > h2{position: absolute; top: 30px; left: 50%; padding-right: 43px; font-size: 17px; display: none;}
 #board > div > h2:after{content: ''; position: absolute; top: 50%; right: 0; width: 40px; height: 2px; background: #222;}
-#board > div > div.detail{width: 100%; position: absolute; top: 200px; padding: 0 13%; opacity: 0; cursor: default; display: none;}
+#board > div > div.detail{width: 100%; position: absolute; top: 50%; padding: 0 13%; opacity: 0; cursor: default; display: none;}
 #board > div > div.detail > span.num-now{display: inline-block; font-size: 17px;}
 #board > div > div.detail > h3{font-size: 70px;}
 #board > div > div.detail > span.type {display: inline-block; font-size: 25px; font-weight: 700; margin-bottom: 60px;}
