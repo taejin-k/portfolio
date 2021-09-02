@@ -82,7 +82,7 @@
 		"skill": "HTML / CSS / JAVASCRIPT(JQUERY) / PYTHON / DOCKER",
 		"desc": [
 			"퍼블리싱 및 개발을 담당한 서비스 소개 페이지입니다.",
-			"반응형 페이지로 작업되었으며, 도커가 사용됐습니다."
+			"반응형 페이지로 작업되었으며, DOCKER가 사용됐습니다."
 		],
 		"link": [
 			{ "url": "https://catchonmind.co.kr/", "button": "VIEW" }
@@ -95,16 +95,24 @@
 		"skill": "HTML / CSS / JAVASCRIPT(JQUERY)",
 		"desc": [
 			"퍼블리싱을 담당한 업체 광고 페이지입니다.",
-			"반응형 페이지로 작업되었으며, 2019년 9월 서비스가 종료됐습니다."
+			"반응형 페이지로 작업되었습니다."
+		],
+		"link": [
+			{ "url": "https://admoa4u.co.kr/", "button": "서비스 종료" }
+
 		]
 	},
 	{
 		"id": 8,
 		"name": "캐치온AI",
-		"skill": "HTML / CSS / JAVASCRIPT / PYTHON",
+		"skill": "HTML / CSS / JAVASCRIPT(JQUERY) / PYTHON",
 		"desc": [
 			"퍼블리싱 및 개발을 담당한 주식 관련 사이트입니다.",
-			"MOBILE 페이지로 작업되었으며, 2021년 4월 서비스가 종료됐습니다."
+			"MOBILE 페이지로 작업되었습니다."
+		],
+		"link": [
+			{ "url": "https://catchoai.co.kr/", "button": "서비스 종료" }
+
 		]
 	}
 ]

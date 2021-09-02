@@ -4,7 +4,7 @@ import './Home.css';
 const Home = ({ HomeFixedBoxRef }) => {
 
     return(
-        <div id='home' className="fixed-box up" ref={HomeFixedBoxRef}>
+        <div id='home' className="fixed-box home_up" ref={HomeFixedBoxRef}>
             <h2>Home</h2>
             <div className="detail">
                 <h3>****<br />PORTFOLIO</h3>

@@ -11,9 +11,8 @@ const Main = ({ setActiveName }) => {
     const HomeFixedBoxRef = useRef(null);
     const AboutFixedBoxRef = useRef(null);
     const ProjectFixedBoxRef = useRef(null);
-    const EndFixedBoxRef = useRef(null);
-    const fixedBoxRefArray = [HomeFixedBoxRef, AboutFixedBoxRef, ProjectFixedBoxRef, EndFixedBoxRef]
-    const [ PagingTop, setPagingTop ] = useState('22.5%');
+    const fixedBoxRefArray = [HomeFixedBoxRef, AboutFixedBoxRef, ProjectFixedBoxRef]
+    const [ PagingTop, setPagingTop ] = useState('31.5%');
 
     return(
         <div className='main'>

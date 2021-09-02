@@ -1,7 +1,12 @@
 #fullpage .section#project .result_board > .content{width: 90%; height: 80%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;}
 #fullpage .section#project .result_board > .content > p{font-size: 5.6rem; margin-bottom: 60px; font-weight: bold;}
-#fullpage .section#project .result_board > .content > div{width: 100%; max-height: calc(100% - 126px); box-shadow: 5px 5px 40px 3px #222; overflow: auto;}
+#fullpage .section#project .result_board > .content > div{width: 100%; max-width: 900px; max-height: calc(100% - 126px); box-shadow: 5px 5px 40px 3px #222; overflow: auto; margin: 0 auto; position: relative;}
 #fullpage .section#project .result_board > .content > div > img{width: 100%;}
+#fullpage .section#project .result_board > .content > div > span{position: absolute; top: 0; right: 20px; display: block; width: 20px; height: 20px; background: #fff;}
 
 /* width */
 #fullpage .section#project .result_board > .content > div.img_8{width:640px; margin: 0 auto;}
+
+/* scrollbar */
+.scrollbar_custom::-webkit-scrollbar{width: 7px;}
+.scrollbar_custom::-webkit-scrollbar-thumb{border-radius: 6px; background-color: #222;}

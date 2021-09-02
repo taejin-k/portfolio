@@ -6,7 +6,6 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import Home from './Home/Home';
 import About from './About/About';
 import Project from './Project/Project';
-import End from './End/End';
 
 // css
 import './FullPage.css';
@@ -49,13 +48,6 @@ const FullPage = ({ BoardRef, setPagingTop, fixedBoxRefArray, setActiveName }) =
       fixedBoxRefArray[d].current.childNodes[0].style.display = 'block';
       fixedBoxRefArray[d].current.childNodes[1].style.animationDelay = '.5s'; 
 
-      // 엑티브 된 페이지만 display: block;
-      setTimeout(function(){
-        fixedBoxRefArray[b].current.childNodes[1].style.display = 'none';
-      }, 500);
-      fixedBoxRefArray[d].current.childNodes[1].style.display = 'block';
-
-
     }
     
     return(
@@ -63,43 +55,36 @@ const FullPage = ({ BoardRef, setPagingTop, fixedBoxRefArray, setActiveName }) =
       <ReactFullpage
         menu = {"#gnb"} // 메뉴 연동
         lockAnchors = {true} // 페이징에 앵커 적용
-        anchors = {['home_page', 'about_page', 'project_page', 'end_page']} // 앵커 아이디 값
+        anchors = {['home_page', 'about_page', 'project_page']} // 앵커 아이디 값
         navigation = {true} // 페이징 생성
         navigationPosition = {"right"} // 페이징 위치 오른쪽
         scrollingSpeed = {800} // 스크롤 속도
-        navigationTooltips = {['Home', 'About', 'Project', 'End']} // 툴팁 값
+        navigationTooltips = {['Home', 'About', 'Project']} // 툴팁 값
         showActiveTooltip = {true} // 툴팁 생성
         keyboardScrolling = {true} // 키보드 스크롤 정지
+        normalScrollElements = '.scroll-active'
         onLeave={(origin, destination, direction) => {
           
           // Home
           if(destination.index === 0 && direction === 'up'){
-            fullpage_slide('22.5%', origin.index, 'moreDown', destination.index, 'down');
+            fullpage_slide('31.5%', origin.index, 'moreDown', destination.index, 'home_down');
             setActiveName('home');
             
           // About
           }else if(destination.index === 1 && direction === 'up'){
-            fullpage_slide('40.5%', origin.index, 'moreDown', destination.index, 'down');
+            fullpage_slide('49%', origin.index, 'moreDown', destination.index, 'down');
             setActiveName('about');
           }else if(destination.index === 1 && direction === 'down'){
-            fullpage_slide('40.5%', origin.index, 'moreUp', destination.index, 'up');
+            fullpage_slide('49%', origin.index, 'moreUp', destination.index, 'up');
             setActiveName('about');
             
           // Project
           }else if(destination.index === 2 && direction === 'up'){
-            fullpage_slide('58%', origin.index, 'moreDown', destination.index, 'down');
+            fullpage_slide('67%', origin.index, 'moreDown', destination.index, 'down');
             setActiveName('project');
           }else if(destination.index === 2 && direction === 'down'){
-            fullpage_slide('58%', origin.index, 'moreUp', destination.index, 'up');
+            fullpage_slide('67%', origin.index, 'moreUp', destination.index, 'up');
             setActiveName('project');
-            
-          // End
-          }else if(destination.index === 3 && direction === 'up'){
-            fullpage_slide('76%', origin.index, 'moreDown', destination.index, 'down');
-            setActiveName('end');
-          }else if(destination.index === 3 && direction === 'down'){
-            fullpage_slide('76%', origin.index, 'moreUp', destination.index, 'up');
-            setActiveName('end');
           }
 
         }}
@@ -110,7 +95,6 @@ const FullPage = ({ BoardRef, setPagingTop, fixedBoxRefArray, setActiveName }) =
               <Home ResultBoardWidth={ResultBoardWidth}/>
               <About ResultBoardWidth={ResultBoardWidth}/>
               <Project ResultBoardWidth={ResultBoardWidth}/>
-              <End ResultBoardWidth={ResultBoardWidth}/>
             </div>
           );
         }}

@@ -46,7 +46,7 @@ const FrontEnd = () => {
                         </div>
                     </div>
                     <div className="desc">
-                        <p>React와 Javascript 기반으로 전반적인 Front-end 개발이 가능합니다.</p>
+                        <p>React와 Javascript 기반으로 전반적인 Front-End 개발이 가능합니다.</p>
                         <p>HTML과 CSS 그리고 jQuery를 이용한 퍼블리싱을 다수 진행한 경험이 있으며, Wordpress, Gnuboard, Bootstrap으로 사이트를 제작할 수 있습니다.</p>
                     </div>
                 </div>

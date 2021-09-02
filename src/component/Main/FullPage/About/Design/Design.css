@@ -1,2 +1,3 @@
 /*#fullpage .section#about .result_board > div.design*/
 #fullpage .section#about .result_board > div.design > .wrap{width: 490px;}
+#fullpage .section#about .result_board > div.design > .wrap .desc{font-family: 'Noto Sans KR', sans-serif; font-weight: 500;}

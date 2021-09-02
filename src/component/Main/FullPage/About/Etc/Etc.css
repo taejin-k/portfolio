@@ -4,3 +4,4 @@
 #fullpage .section#about .result_board > div.etc > .wrap .icon > div:nth-of-type(2) > span > span{width: 90%;}
 #fullpage .section#about .result_board > div.etc > .wrap .icon > div:nth-of-type(3) > span > span{width: 70%;}
 #fullpage .section#about .result_board > div.etc > .wrap .icon > div:nth-of-type(4) > span > span{width: 80%;}
+#fullpage .section#about .result_board > div.etc > .wrap .desc{font-family: 'Noto Sans KR', sans-serif; font-weight: 500;}

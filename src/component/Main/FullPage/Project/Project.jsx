@@ -14,7 +14,7 @@ const Project = ({ ResultBoardWidth }) => {
             <div className="result_board" style={{ width: ResultBoardWidth }}>
                 <div className='content'>
                     <p>PREVEIW</p>
-                    <div className={"img_" + Count.number}>
+                    <div className={"img_" + Count.number + " scroll-active scrollbar_custom"}>
                         <img src={'/img/slide_' + Count.number + '.jpg'} alt='slide'/>
                     </div>
                 </div>

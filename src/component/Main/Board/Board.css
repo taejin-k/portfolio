@@ -1,34 +1,45 @@
 @charset "utf-8";
+@keyframes home_up {
+    0% {opacity: 0; top: 80%; transform: translateY(-80%); z-index: -999999;}
+    100% {opacity: 1; top: 50%; transform: translateY(-50%); z-index: 999999;}
+}
+@keyframes home_down {
+    0% {opacity: 0; top: 30%; transform: translateY(-30%); z-index: -999999;}
+    100% {opacity: 1; top: 50%; transform: translateY(-50%); z-index: 999999;}
+}
 @keyframes up {
-    0% {opacity: 0; transform: translateY(150px);}
-    100% {opacity: 1; transform: translateY(-50%);}
+    0% {opacity: 0; top: 90%; transform: translateY(-90%); z-index: -999999;}
+    100% {opacity: 1; top: 50%; transform: translateY(-50%); z-index: 999999;}
 }
 @keyframes moreUp {
-    0% {opacity: 1; transform: translateY(-50%);}
-    100% {opacity: 0; transform: translateY(-150px);}
+    0% {opacity: 1; top: 50%; transform: translateY(-50%); z-index: 999999;}
+    100% {opacity: 0; top: 10%; transform: translateY(-10%); z-index: -999999;}
 }
 @keyframes down {
-    0% {opacity: 0; transform: translateY(-150px);}
-    100% {opacity: 1; transform: translateY(-50%);}
+    0% {opacity: 0; top: 10%; transform: translateY(-10%); z-index: -999999;}
+    100% {opacity: 1; top: 50%; transform: translateY(-50%); z-index: 999999;}
 }
 @keyframes moreDown {
-    0% {opacity: 1; transform: translateY(-50%);}
-    100% {opacity: 0; transform: translateY(150px);}
+    0% {opacity: 1; top: 50%; transform: translateY(-50%); z-index: 999999;}
+    100% {opacity: 0; top: 90%; transform: translateY(-90%); z-index: -999999;}
 }
 
 #board{position: fixed; top: 30px; left: 30px; max-width: 760px; width: 40%; height: calc(100% - 60px); background: rgba(0, 0, 0, 0.3); z-index: 1;}
 #board > #fp-nav-duplication{width: 274px; height: 322px; position: fixed; z-index: 100; top: 50%; opacity: 1; transform: translateY(-50%); -ms-transform: translateY(-50%); -webkit-transform: translate3d(0,-50%,0); right: -85px;}
-#board > #fp-nav-duplication > i{display: block; width: 30px; height: 30px; border: 2px solid #000; border-radius: 50%; position: absolute; top: 22.5%; left: 48.5%; transform: translate(-50%, -50%); transition: 1s; transition-timing-function: ease;}
+#board > #fp-nav-duplication > i{display: block; width: 30px; height: 30px; border: 2px solid #000; border-radius: 50%; position: absolute; left: 48.5%; transform: translate(-50%, -50%); transition: 1s; transition-timing-function: ease;}
 #board > div{position: absolute; width: 100%; height: 100%;}
 #board > div > h2{position: absolute; top: 30px; left: 50%; padding-right: 43px; font-size: 17px; display: none;}
 #board > div > h2:after{content: ''; position: absolute; top: 50%; right: 0; width: 40px; height: 2px; background: #222;}
-#board > div > div.detail{width: 100%; position: absolute; top: 50%; padding: 0 13%; opacity: 0; cursor: default; display: none;}
+#board > div > div.detail{width: 100%; position: absolute; padding: 0 13%; opacity: 0; cursor: default;}
 #board > div > div.detail > span.num-now{display: inline-block; font-size: 17px;}
 #board > div > div.detail > h3{font-size: 70px;}
 #board > div > div.detail > span.type {display: inline-block; font-size: 25px; font-weight: 700; margin-bottom: 60px;}
 
 /*#board animation class*/
-#board > div.up > div.detail{animation: up 0.5s forwards;}
+#board > div.home_up > div.detail{animation: home_up .8s forwards;}
+#board > div.home_down > div.detail{animation: home_down .5s forwards;}
+
+#board > div.up > div.detail{animation: up .5s forwards;}
 #board > div.moreUp > div.detail{animation: moreUp 0.5s forwards;}
 #board > div.down > div.detail{animation: down 0.5s forwards;}
 #board > div.moreDown > div.detail{animation: moreDown 0.5s forwards;}

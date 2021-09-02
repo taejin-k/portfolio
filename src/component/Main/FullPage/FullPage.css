@@ -10,7 +10,6 @@
 #fullpage #home .background{background: url(./img/background_home.jpeg) no-repeat center; background-size: cover;}
 #fullpage #about .background{background: url(./img/background_about.jpeg) no-repeat center; background-size: cover;}
 #fullpage #project .background{background: url(./img/background_project.jpeg) no-repeat center; background-size: cover;}
-#fullpage #end .background{background: url(./img/background_end.jpeg) no-repeat center; background-size: cover;}
 
 /*.main #fullpage pagination*/
 #fp-nav.fp-right{right: -85px; transition: .5s; transition-timing-function: ease;}

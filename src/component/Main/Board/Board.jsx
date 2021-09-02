@@ -2,7 +2,6 @@
 import Home from './Home/Home';
 import About from './About/About';
 import Project from './Project/Project';
-import End from './End/End';
 
 
 // css
@@ -16,7 +15,6 @@ const Board = ({ BoardRef, PagingTop, fixedBoxRefArray }) => {
             <Home HomeFixedBoxRef={fixedBoxRefArray[0]} />
             <About AboutFixedBoxRef={fixedBoxRefArray[1]} />
             <Project ProjectFixedBoxRef={fixedBoxRefArray[2]} />
-            <End EndFixedBoxRef={fixedBoxRefArray[3]} />
         </div>       
     )
 }
