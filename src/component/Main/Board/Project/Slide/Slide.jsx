@@ -19,7 +19,7 @@ const Slide = ({ ProjectArray }) => {
                     ProjectArray.link.map((link, index) => {
 
                         return (
-                            link.button === '서비스 종료'
+                            link.button === '서비스 종료' || link.button === '비공개'
                             ?   <span key={index}>{link.button}</span>               
                             :   <a key={index} href={link.button === '서비스 종료' ? '' : link.url} target='blank'>{link.button}</a>                  
                         )

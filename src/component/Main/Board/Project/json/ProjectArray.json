@@ -2,7 +2,7 @@
 	{
 		"id": 0,
 		"name": "로또블루",
-		"skill": "HTML / CSS / JAVASCRIPT(JQUERY)",
+		"skill": "HTML / CSS / JAVASCRIPT",
 		"desc": [
 			"퍼블리싱을 담당한 로또 추천 페이지입니다.",
 			"PC 페이지와 MOBILE 페이지가 따로 제작되었습니다."
@@ -15,34 +15,33 @@
 	{
 		"id": 1,
 		"name": "키움로또",
-		"skill": "HTML / CSS / JAVASCRIPT(JQUERY)",
+		"skill": "HTML / CSS / JAVASCRIPT",
 		"desc": [
 			"퍼블리싱을 담당한 로또 추천 페이지입니다.",
 			"PC 페이지와 MOBILE 페이지가 따로 제작되었습니다."
 		],
 		"link": [
-			{ "url": "https://kiumlotto.co.kr/", "button": "PC VIEW" },
-			{ "url": "https://m.kiumlotto.co.kr/", "button": "MOBILE VIEW" }
+			{ "url": "https://kiumlotto.com/", "button": "PC VIEW" },
+			{ "url": "https://m.kiumlotto.com/", "button": "MOBILE VIEW" }
 		]
 	},
 	{
 		"id": 2,
 		"name": "지니로또",
-		"skill": "HTML / CSS / JAVASCRIPT(JQUERY)",
+		"skill": "HTML / CSS / JAVASCRIPT",
 		"desc": [
 			"퍼블리싱을 담당한 로또 추천 페이지입니다.",
 			"PC 페이지와 MOBILE 페이지가 따로 제작되었습니다.",
 		  	"MOBILE 페이지는 MOBILE에서 접속해주세요."
 		],
 		"link": [
-			{ "url": "https://genielotto.co.kr/", "button": "PC VIEW" },
-			{ "url": "https://m.genielotto.co.kr/", "button": "MOBILE VIEW" }
+			{ "url": "https://genielotto.co.kr/", "button": "VIEW" }
 		]
 	},
 	{
 		"id": 3,
 		"name": "웰컴로또",
-		"skill": "HTML / CSS / JAVASCRIPT(JQUERY)",
+		"skill": "HTML / CSS / JAVASCRIPT",
 		"desc": [
 			"퍼블리싱을 담당한 로또 추천 페이지입니다.",
 			"반응형 페이지로 작업되었습니다."
@@ -54,7 +53,7 @@
 	{
 		"id": 4,
 		"name": "로또비전",
-		"skill": "HTML / CSS / JAVASCRIPT(JQUERY)",
+		"skill": "HTML / CSS / JAVASCRIPT",
 		"desc": [
 			"퍼블리싱을 담당한 로또 추천 페이지입니다.",
 			"반응형 페이지로 작업되었습니다."
@@ -66,10 +65,10 @@
 	{
 		"id": 5,
 		"name": "알림몬",
-		"skill": "HTML / CSS / JAVASCRIPT(JQUERY) / PYTHON",
+		"skill": "HTML / CSS / JAVASCRIPT / PYTHON / MYSQL",
 		"desc": [
 			"퍼블리싱 및 개발을 담당한 문자 서비스 페이지입니다.",
-			"처음으로 PYTHON을 사용해본 페이지로 회원가입, 로그인, 개인정보수정 등 회원관련 부분을 개발했습니다."
+			"처음으로 PYTHON을 사용해 본 페이지로 회원가입, 로그인, 개인정보수정 등 회원관련 부분을 개발했습니다."
 		],
 		"link": [
 			{ "url": "http://allimmon.com/", "button": "VIEW" }
@@ -79,9 +78,9 @@
 	{
 		"id": 6,
 		"name": "캐치온마인드",
-		"skill": "HTML / CSS / JAVASCRIPT(JQUERY) / PYTHON / DOCKER",
+		"skill": "HTML / CSS / JAVASCRIPT / PYTHON / DOCKER",
 		"desc": [
-			"퍼블리싱 및 개발을 담당한 서비스 소개 페이지입니다.",
+			"퍼블리싱 및 개발을 담당한 캐치온AI 서비스 소개 페이지입니다.",
 			"반응형 페이지로 작업되었으며, DOCKER가 사용됐습니다."
 		],
 		"link": [
@@ -92,7 +91,7 @@
 	{
 		"id": 7,
 		"name": "애드모아4U",
-		"skill": "HTML / CSS / JAVASCRIPT(JQUERY)",
+		"skill": "HTML / CSS / JAVASCRIPT",
 		"desc": [
 			"퍼블리싱을 담당한 업체 광고 페이지입니다.",
 			"반응형 페이지로 작업되었습니다."
@@ -105,14 +104,69 @@
 	{
 		"id": 8,
 		"name": "캐치온AI",
-		"skill": "HTML / CSS / JAVASCRIPT(JQUERY) / PYTHON",
+		"skill": "HTML / CSS / JAVASCRIPT / PYTHON / MYSQL",
 		"desc": [
 			"퍼블리싱 및 개발을 담당한 주식 관련 사이트입니다.",
-			"MOBILE 페이지로 작업되었습니다."
+			"회원가입, 로그인, 개인정보수정 등 회원관련 부분을 개발했으며, MOBILE 페이지로 작업되었습니다."
 		],
 		"link": [
 			{ "url": "https://catchoai.co.kr/", "button": "서비스 종료" }
 
 		]
+	},
+	{
+		"id": 9,
+		"name": "로또 관리자",
+		"skill": "HTML / CSS / JAVASCRIPT / BOOTSTRAP",
+		"desc": [
+			"퍼블리싱을 담당한 로또 관리자 페이지입니다.",
+			"부트스트랩을 기반으로 제작됐습니다."
+		],
+		"link": [
+			{ "url": "/", "button": "비공개" }
+
+		]
+	},
+	{
+		"id": 10,
+		"name": "유튜브(CLONE)",
+		"skill": "HTML / CSS / JAVASCRIPT / REACT",
+		"desc": [
+			"구글 유튜브 API 인기 동영상 가져오기, 검색을 사용한 유튜브 클론 코딩 페이지입니다.",
+			"Intersection Observer를 이용한 Skeleton Loading이 구현됐습니다."
+		],
+		"link": [
+			{ "url": "/", "button": "VIEW" },
+			{ "url": "https://github.com/rhesus2017/youtube_clone_coding", "button": "GITHUB" }
+
+		]
+	},
+	{
+		"id": 11,
+		"name": "로또코치",
+		"skill": "HTML / CSS / PHP / WORDPRESS",
+		"desc": [
+			"퍼블리싱을 담당한 로또코치 서비스 소개 페이지입니다.",
+			"워드프레스를 기반으로 제작됐으며 Widget, Panel, Control을 직접 만들어 추가했습니다."
+		],
+		"link": [
+			{ "url": "/", "button": "VIEW" },
+			{ "url": "https://github.com/rhesus2017/wordpress", "button": "GITHUB" }
+
+		]
+	},
+	{
+		"id": 12,
+		"name": "웹 크롤러(Requests)",
+		"skill": "PYTHON",
+		"desc": [
+			"PYTHON Request를 이용한 웹 크롤러입니다.",
+			"네이버 뉴스, 다음 뉴스, 네이트 뉴스 등 약 20개의 웹 크롤러가 있습니다"
+		],
+		"link": [
+			{ "url": "https://github.com/rhesus2017/requests_crawler", "button": "GITHUB" }
+
+		]
 	}
+	
 ]

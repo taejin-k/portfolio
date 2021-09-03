@@ -11,8 +11,7 @@ const Profile = () => {
                     <p className="p"><span className="span">ADDRESS</span>경기도 부천시</p>
                     <p className="p"><span className="span">E-MAIL</span>rhesus2016@gmail.com</p>
                     <p className="p"><span className="span">TEL</span>010 - 3934 - 5623</p>
-                    <p className="p"><span className="span">GIT</span><a href="https://github.com/rhesus2017" rel="noreferrer" target="_blank">https://github.com/rhesus2017</a></p>
-                    <p className="p"><span className="span">VELOG</span><a href="https://velog.io/@rhesus2016" rel="noreferrer" target="_blank">https://velog.io/@rhesus2016</a></p>
+                    <p className="p"><span className="span">GIT</span><a href="https://github.com/rhesus2017" rel="noreferrer" target="_blank">https://github.com/rhesus2017<span>클릭하면 프로젝트를 확인할 수 있어요</span></a></p>
                     <span>-</span>
                     <div>
                         <div>
