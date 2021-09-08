@@ -201,7 +201,7 @@
 			"현재까지 작업물을 소개하기 위한 포트폴리오 페이지입니다."
 		],
 		"link": [
-			{ "url": "/", "button": "VIEW" },
+			{ "url": "https://rhesus2017.github.io/portfolio/", "button": "VIEW" },
 			{ "url": "https://github.com/rhesus2017/portfolio", "button": "GITHUB" }
 
 		]

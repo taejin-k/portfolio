@@ -9,11 +9,11 @@ const Design = () => {
                     <p className="title">DESIGN</p>
                     <div className="icon">
                         <div>
-                            <div className="img"><img src='/img/ps.png' alt="ps"/></div>
+                            <div className="img"><img src='img/ps.png' alt="ps"/></div>
                             <p>PHOTOSHOP</p>
                         </div>
                         <div>
-                            <div className="img"><img src='/img/ai.png' alt="ai"/></div>
+                            <div className="img"><img src='img/ai.png' alt="ai"/></div>
                             <p>ILLUSTRATOR</p>
                         </div>
                     </div>

@@ -9,23 +9,23 @@ const Etc = () => {
                     <p className="title">ETC</p>
                     <div className="icon">
                         <div>
-                            <div className="img"><img src='/img/python.png' alt="python" /></div>
+                            <div className="img"><img src='img/python.png' alt="python" /></div>
                             <p>PYTHON</p>
                         </div>
                         <div>
-                            <div className="img"><img src='/img/git.png' alt="git" /></div>
+                            <div className="img"><img src='img/git.png' alt="git" /></div>
                             <p>GIT</p>
                         </div>
                         <div>
-                            <div className="img"><img src='/img/sourcetree.png' alt="sourcetree" /></div>
+                            <div className="img"><img src='img/sourcetree.png' alt="sourcetree" /></div>
                             <p>SOURCETREE</p>
                         </div>
                         <div>
-                            <div className="img"><img src='/img/postman.png' alt="postman" /></div>
+                            <div className="img"><img src='img/postman.png' alt="postman" /></div>
                             <p>POSTMAN</p>
                         </div>
                         <div>
-                            <div className="img"><img src='/img/mobaxterm.png' alt="mobaxterm" /></div>
+                            <div className="img"><img src='img/mobaxterm.png' alt="mobaxterm" /></div>
                             <p>MOBAXTERM</p>
                         </div>
                     </div>

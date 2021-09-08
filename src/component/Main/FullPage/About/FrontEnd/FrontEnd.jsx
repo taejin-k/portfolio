@@ -9,39 +9,39 @@ const FrontEnd = () => {
                     <p className="title">FRONT-END</p>
                     <div className="icon">
                         <div>
-                            <div className="img"><img src='/img/react.png' alt="react"/></div>
+                            <div className="img"><img src='img/react.png' alt="react"/></div>
                             <p>REACT</p>
                         </div>
                         <div>
-                            <div className="img"><img src='/img/js.png' alt="js"/></div>
+                            <div className="img"><img src='img/js.png' alt="js"/></div>
                             <p>JAVASCRIPT</p>
                         </div>
                         <div>
-                            <div className="img"><img src='/img/html.png' alt="html" /></div>
+                            <div className="img"><img src='img/html.png' alt="html" /></div>
                             <p>HTML</p>
                         </div>
                         <div>
-                            <div className="img"><img src='/img/css.png' alt="css"/></div>
+                            <div className="img"><img src='img/css.png' alt="css"/></div>
                             <p>CSS</p>
                         </div>
                         <div>
-                            <div className="img"><img src='/img/sass.png' alt="sass"/></div>
+                            <div className="img"><img src='img/sass.png' alt="sass"/></div>
                             <p>SASS</p>
                         </div>
                         <div>
-                            <div className="img"><img src='/img/jquery.png' alt="jquery"/></div>
+                            <div className="img"><img src='img/jquery.png' alt="jquery"/></div>
                             <p>JQUERY</p>
                         </div>
                         <div>
-                            <div className="img"><img src='/img/wordpress.png' alt="wordpress"/></div>
+                            <div className="img"><img src='img/wordpress.png' alt="wordpress"/></div>
                             <p>WORDPRESS</p>
                         </div>
                         <div>
-                            <div className="img"><img src='/img/gnuboard.png' alt="gnuboard"/></div>
+                            <div className="img"><img src='img/gnuboard.png' alt="gnuboard"/></div>
                             <p>GNUBOARD</p>
                         </div>
                         <div>
-                            <div className="img"><img src='/img/bootstrap.png' alt="bootstrap"/></div>
+                            <div className="img"><img src='img/bootstrap.png' alt="bootstrap"/></div>
                             <p>BOOTSTRAP</p>
                         </div>
                     </div>

@@ -15,7 +15,7 @@ const Project = ({ ResultBoardWidth }) => {
                 <div className='content'>
                     <p>PREVEIW<span>스크롤을 내려서 PREVIEW를 확인해주세요</span></p>
                     <div className={"img_" + Count.number + " scroll-active scrollbar_custom"}>
-                        <img src={'/img/slide_' + Count.number + '.jpg'} alt='slide'/>
+                        <img src={'img/slide_' + Count.number + '.jpg'} alt='slide'/>
                     </div>
                 </div>
             </div>

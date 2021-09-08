@@ -9,15 +9,15 @@ const BackEnd = () => {
                     <p className="title">BACK-END</p>
                     <div className="icon">
                         <div>
-                            <div className="img"><img src='/img/python.png' alt="python" /></div>
+                            <div className="img"><img src='img/python.png' alt="python" /></div>
                             <p>PYTHON</p>
                         </div>
                         <div>
-                            <div className="img"><img src='/img/mysql.png' alt="mysql"/></div>
+                            <div className="img"><img src='img/mysql.png' alt="mysql"/></div>
                             <p>MYSQL</p>
                         </div>
                         <div>
-                            <div className="img"><img src='/img/docker.png' alt="docker"/></div>
+                            <div className="img"><img src='img/docker.png' alt="docker"/></div>
                             <p>DOCKER</p>
                         </div>
                     </div>
