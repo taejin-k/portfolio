@@ -1,4 +1,5 @@
 // redux
+import { useRef, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 
 // css
@@ -6,7 +7,12 @@ import './Project.css';
 
 const Project = ({ ResultBoardWidth }) => {
 
+    const imgBoxRef = useRef(null);
     const Count = useSelector(state => state.SetSlideNumber)
+
+    useEffect(() => {
+        imgBoxRef.current.scrollTo(0, 0);
+    }, [Count.number])
 
     return(
         <div className="section" id="project" data-anchor="project_page">
@@ -14,7 +20,7 @@ const Project = ({ ResultBoardWidth }) => {
             <div className="result_board" style={{ width: ResultBoardWidth }}>
                 <div className='content'>
                     <p>PREVEIW<span>스크롤을 내려서 PREVIEW를 확인해주세요</span></p>
-                    <div className={"img_" + Count.number + " scroll-active scrollbar_custom"}>
+                    <div className={"img_" + Count.number + " scroll-active scrollbar_custom"} ref={imgBoxRef}>
                         <img src={'img/slide_' + Count.number + '.jpg'} alt='slide'/>
                     </div>
                 </div>
