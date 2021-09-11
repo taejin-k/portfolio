@@ -11,7 +11,9 @@ const Project = ({ ResultBoardWidth }) => {
     const Count = useSelector(state => state.SetSlideNumber)
 
     useEffect(() => {
-        imgBoxRef.current.scrollTo(0, 0);
+        setTimeout(function() {
+            imgBoxRef.current.scrollTo(0, 0);
+        }, 1000);
     }, [Count.number])
 
     return(
