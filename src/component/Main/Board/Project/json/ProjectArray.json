@@ -150,7 +150,6 @@
 			"워드프레스를 기반으로 제작됐으며 Widget, Panel, Control을 직접 만들어 추가했습니다."
 		],
 		"link": [
-			{ "url": "/", "button": "VIEW" },
 			{ "url": "https://github.com/rhesus2017/wordpress", "button": "GITHUB" }
 
 		]
