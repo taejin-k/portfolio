@@ -1,10 +1,9 @@
 #fullpage .section#project .result_board > .content{width: 90%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;}
 #fullpage .section#project .result_board > .content > p{font-size: 5.6rem; margin: 0 auto 60px; font-weight: bold; position: relative; max-width: 900px;}
-#fullpage .section#project .result_board > .content > p span{position: absolute; bottom: -40px; right: 20px; background: #222; padding: 4px 6px 4px; border-radius: 3px; color: #fff; font-size: 1.1rem;}
-#fullpage .section#project .result_board > .content > p span:before{content: ''; width: 0px; height: 0px; display: block; border-top: 7px solid #222; border-bottom: 5px solid none; border-left: 7px solid transparent; border-right: 0px solid  transparent; position: absolute; bottom: -7px; right: 7px;}
 #fullpage .section#project .result_board > .content > div{width: 100%; max-width: 900px; max-height: calc(100vh - 45vh); box-shadow: 5px 5px 40px 3px #222; overflow: auto; margin: 0 auto; position: relative;}
 #fullpage .section#project .result_board > .content > div > img{width: 100%;}
-#fullpage .section#project .result_board > .content > div > span{position: absolute; top: 0; right: 20px; display: block; width: 20px; height: 20px; background: #fff;}
+#fullpage .section#project .result_board > .content > div > span{position: absolute; top: 10px; right: 15px; background: #222; padding: 4px 6px 4px; border-radius: 3px; color: #fff; font-size: 1.1rem;}
+#fullpage .section#project .result_board > .content > div > span:before{content: ''; width: 0px; height: 0px; display: block; border-top: 7px solid #222; border-bottom: 5px solid none; border-left: 7px solid transparent; border-right: 0px solid  transparent; position: absolute; bottom: -7px; right: 7px;}
 
 /* width */
 #fullpage .section#project .result_board > .content > div.img_8{width:640px; margin: 0 auto;}
