@@ -19,7 +19,7 @@ const Profile = () => {
                         </div>
                         <div>
                         <p className="history">2017.07 ~ 2018.03 : 강남 SBS컴퓨터아카데미</p>
-                        <p className="history">2018.05 ~ : (주)피플아이 퍼블리싱 및 개발 업무</p>
+                        <p className="history">2018.05 ~ 2021.09: (주)피플아이 퍼블리싱 및 개발 업무</p>
                         </div>
                     </div>
                 </div>
