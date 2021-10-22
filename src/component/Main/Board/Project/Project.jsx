@@ -12,7 +12,7 @@ import Slide from './Slide/Slide';
 import './Project.css';
 
 // json
-import ProjectArrays from './json/ProjectArray.json';
+import ProjectArrays from '/json/ProjectArray.json';
 
 
 const Project = ({ ProjectFixedBoxRef }) => {
