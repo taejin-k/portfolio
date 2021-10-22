@@ -7,7 +7,7 @@ import Home from './page/Home/Home';
 import NotFound from './page/NotFound/NotFound';
 
 // json
-import ImgArrays from '/json/ImgArray.json';
+import ImgArrays from './json/ImgArray.json';
 
 function App() {
 
