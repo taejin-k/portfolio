@@ -23,7 +23,7 @@
 			"해당 페이지의 계정은 GITHUB README.md에서 확인할 수 있습니다." 
 		],
 		"link": [
-			{ "url": "http://18.118.50.80:5000/", "button": "VIEW" },
+			{ "url": "http://3.144.85.216:5000/", "button": "VIEW" },
 			{ "url": "https://github.com/rhesus2017/member_management", "button": "GITHUB" }
 
 		]
