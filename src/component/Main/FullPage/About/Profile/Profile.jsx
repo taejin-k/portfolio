@@ -8,7 +8,7 @@ const Profile = () => {
                 <div className="text">
                     <p className="title">PROFILE</p>
                     <p className="p"><span className="span">NAME</span>김태진</p>
-                    <p className="p"><span className="span">ADDRESS</span>경기도 성남시</p>
+                    <p className="p"><span className="span">ADDRESS</span>경기도 성남시 태평동</p>
                     <p className="p"><span className="span">E-MAIL</span>rhesus2016@gmail.com</p>
                     <p className="p"><span className="span">TEL</span>010 - 3934 - 5623</p>
                     <p className="p"><span className="span">GIT</span><a href="https://github.com/rhesus2017" rel="noreferrer" target="_blank">https://github.com/rhesus2017<span>클릭하면 프로젝트를 확인할 수 있어요</span></a></p>
