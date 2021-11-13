@@ -5,7 +5,7 @@
 #fullpage .section#project .result_board > .content > div > span{position: absolute; top: 10px; right: 10px; background: #222; padding: 4px 6px 4px; border-radius: 3px; color: #fff; font-size: 1.1rem; border: 1px solid #fff;}
 
 /* width */
-#fullpage .section#project .result_board > .content > div.img_14{width:640px; margin: 0 auto;}
+#fullpage .section#project .result_board > .content > div.img_15{width:640px; margin: 0 auto;}
 
 /* scrollbar */
 .scrollbar_custom::-webkit-scrollbar{width: 7px;}
