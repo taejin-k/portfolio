@@ -25,8 +25,8 @@ const Etc = () => {
                             <p>POSTMAN</p>
                         </div>
                         <div>
-                            <div className="img"><img src='img/mobaxterm.png' alt="mobaxterm" /></div>
-                            <p>MOBAXTERM</p>
+                            <div className="img"><img src='img/aws.png' alt="aws" /></div>
+                            <p>AWS</p>
                         </div>
                     </div>
                     <div className="desc">
