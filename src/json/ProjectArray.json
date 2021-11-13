@@ -1,14 +1,14 @@
 [	
 	{
 		"id": 0,
-		"name": "GIT REPOSITORY ISSUES 검색 사이트",
+		"name": "REPOSITORY 검색 사이트",
 		"skill": "HTML / CSS / JAVASCRIPT / REACT",
 		"desc": [
-			"GIT REPOSITORY을 검색할 수 있는 웹 사이트입니다.",
-			"원하는 REPOSITORY를 관심 목록에 저장하고 해당 저장소의 최신 이슈를 한눈에 살펴볼 수 있습니다."
+			"GITHUB의 REPOSITORY를 검색할 수 있는 웹 사이트입니다.",
+			"원하는 REPOSITORY를 관심 목록에 저장하고, 해당 REPOSITORY의 최신 이슈를 한눈에 살펴볼 수 있습니다."
 		],
 		"link": [
-			{ "url": "https://master.d2gmf6cuiuql7v.amplifyapp.com//", "button": "VIEW" },
+			{ "url": "https://master.d2gmf6cuiuql7v.amplifyapp.com/", "button": "VIEW" },
 			{ "url": "https://github.com/rhesus2017/git_search", "button": "GITHUB" }
 
 		]

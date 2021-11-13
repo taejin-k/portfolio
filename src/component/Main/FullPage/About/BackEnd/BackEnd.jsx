@@ -22,8 +22,7 @@ const BackEnd = () => {
                         </div>
                     </div>
                     <div className="desc">
-                        <p>Python과 Mysql을 사용하여 API를 개발할 수 있으며, Python Web FrameWork로는 Flask를 이용합니다.</p>
-                        <p>Docker를 통해 Python Flask 개발 환경을 구성할 수 있습니다.</p>
+                        <p>Python과 Mysql로 Back-End 개발이 가능하며, Python Web FrameWork로는 Flask를 이용합니다.</p>
                     </div>
                 </div>
             </div>
