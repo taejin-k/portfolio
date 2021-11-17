@@ -17,6 +17,10 @@ const FrontEnd = () => {
                             <p>JAVASCRIPT</p>
                         </div>
                         <div>
+                            <div className="img"><img src='img/ts.png' alt="ts"/></div>
+                            <p>TYPESCRIPT</p>
+                        </div>
+                        <div>
                             <div className="img"><img src='img/html.png' alt="html" /></div>
                             <p>HTML</p>
                         </div>

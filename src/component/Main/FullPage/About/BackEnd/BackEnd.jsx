@@ -22,7 +22,7 @@ const BackEnd = () => {
                         </div>
                     </div>
                     <div className="desc">
-                        <p>Python과 Mysql로 Back-End 개발이 가능하며, Python Web FrameWork로는 Flask를 이용합니다.</p>
+                        <p>Python과 Mysql로 기본적인 Back-End 개발이 가능하며, Python Web FrameWork로는 Flask를 이용합니다.</p>
                     </div>
                 </div>
             </div>
