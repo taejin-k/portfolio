@@ -1,7 +1,51 @@
-/*#fullpage .section#about .result_board > div.back_end*/
-#fullpage .section#about .result_board > div.back_end > .wrap{width: 560px;}
-#fullpage .section#about .result_board > div.back_end > .wrap .icon > div:nth-of-type(1) > span > span{width: 80%;}
-#fullpage .section#about .result_board > div.back_end > .wrap .icon > div:nth-of-type(2) > span > span{width: 90%;}
-#fullpage .section#about .result_board > div.back_end > .wrap .icon > div:nth-of-type(3) > span > span{width: 70%;}
-#fullpage .section#about .result_board > div.back_end > .wrap .icon > div:nth-of-type(4) > span > span{width: 80%;}
-#fullpage .section#about .result_board > div.back_end > .wrap .desc{font-family: 'Noto Sans KR', sans-serif; font-weight: 500;}
+#fullpage .section#about .result_board > div.back_end > .wrap {
+  width: 560px;
+}
+#fullpage
+  .section#about
+  .result_board
+  > div.back_end
+  > .wrap
+  .icon
+  > div:nth-of-type(1)
+  > span
+  > span {
+  width: 80%;
+}
+#fullpage
+  .section#about
+  .result_board
+  > div.back_end
+  > .wrap
+  .icon
+  > div:nth-of-type(2)
+  > span
+  > span {
+  width: 90%;
+}
+#fullpage
+  .section#about
+  .result_board
+  > div.back_end
+  > .wrap
+  .icon
+  > div:nth-of-type(3)
+  > span
+  > span {
+  width: 70%;
+}
+#fullpage
+  .section#about
+  .result_board
+  > div.back_end
+  > .wrap
+  .icon
+  > div:nth-of-type(4)
+  > span
+  > span {
+  width: 80%;
+}
+#fullpage .section#about .result_board > div.back_end > .wrap .desc {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+}

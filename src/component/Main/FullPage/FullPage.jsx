@@ -1,13 +1,9 @@
-// react
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
-
-// component
 import Home from "./Home/Home";
 import About from "./About/About";
 import Project from "./Project/Project";
-
-// css
 import "./FullPage.css";
 
 const FullPage = ({
@@ -16,62 +12,49 @@ const FullPage = ({
   elementsInBoard,
   setActiveMenu,
 }) => {
-  function getWindowWidth() {
+  const [boardWidth, setBoardWidth] = useState();
+
+  const returnWindowWidth = () => {
     const { innerWidth: width } = window;
     return { width };
-  }
+  };
 
-  function SetBoardResultWidth() {
-    const [ResultBoardWidthState, setResultBoardWidthState] = useState();
+  const handleResize = () => {
+    setBoardWidth(
+      returnWindowWidth()["width"] - BoardRef.current.offsetWidth - 230
+    );
+  };
 
-    useEffect(() => {
-      function handleResize() {
-        setResultBoardWidthState(
-          getWindowWidth()["width"] - BoardRef.current.offsetWidth - 230
-        );
-      }
-      setResultBoardWidthState(
-        getWindowWidth()["width"] - BoardRef.current.offsetWidth - 230
-      );
-      window.addEventListener("resize", handleResize);
-    }, []);
-
-    return ResultBoardWidthState;
-  }
-
-  const ResultBoardWidth = SetBoardResultWidth();
-
-  function fullpage_slide(a, b, c, d, e) {
-    // 페이징 active 위치
+  const handlePageSlide = (a, b, c, d, e) => {
     setPagingTopPosition(a);
-
-    // 애니메이션 클래스 초기화
     elementsInBoard[b].current.childNodes[1].style.animationDelay = "0s";
-
-    // 스크롤 방향에 따른 애니메이션
     elementsInBoard[b].current.className = "fixed-box " + c;
     elementsInBoard[b].current.childNodes[0].style.display = "none";
     elementsInBoard[d].current.className = "fixed-box " + e;
     elementsInBoard[d].current.childNodes[0].style.display = "block";
     elementsInBoard[d].current.childNodes[1].style.animationDelay = ".5s";
-  }
+  };
+
+  useEffect(() => {
+    handleResize();
+    window.addEventListener("resize", handleResize);
+  }, []);
 
   return (
     <ReactFullpage
-      menu={"#gnb"} // 메뉴 연동
-      lockAnchors={true} // 페이징에 앵커 적용
-      anchors={["home_page", "about_page", "project_page"]} // 앵커 아이디 값
-      navigation={true} // 페이징 생성
-      navigationPosition={"right"} // 페이징 위치 오른쪽
-      scrollingSpeed={800} // 스크롤 속도
-      navigationTooltips={["Home", "About", "Project"]} // 툴팁 값
-      showActiveTooltip={true} // 툴팁 생성
-      keyboardScrolling={true} // 키보드 스크롤 정지
+      menu={"#gnb"}
+      lockAnchors={true}
+      anchors={["home_page", "about_page", "project_page"]}
+      navigation={true}
+      navigationPosition={"right"}
+      scrollingSpeed={800}
+      navigationTooltips={["Home", "About", "Project"]}
+      showActiveTooltip={true}
+      keyboardScrolling={true}
       normalScrollElements=".scroll-active"
       onLeave={(origin, destination, direction) => {
-        // Home
         if (destination.index === 0 && direction === "up") {
-          fullpage_slide(
+          handlePageSlide(
             "31.5%",
             origin.index,
             "moreDown",
@@ -79,10 +62,8 @@ const FullPage = ({
             "home_down"
           );
           setActiveMenu("home");
-
-          // About
         } else if (destination.index === 1 && direction === "up") {
-          fullpage_slide(
+          handlePageSlide(
             "49%",
             origin.index,
             "moreDown",
@@ -91,7 +72,7 @@ const FullPage = ({
           );
           setActiveMenu("about");
         } else if (destination.index === 1 && direction === "down") {
-          fullpage_slide(
+          handlePageSlide(
             "49%",
             origin.index,
             "moreUp",
@@ -99,10 +80,8 @@ const FullPage = ({
             "up"
           );
           setActiveMenu("about");
-
-          // Project
         } else if (destination.index === 2 && direction === "up") {
-          fullpage_slide(
+          handlePageSlide(
             "67%",
             origin.index,
             "moreDown",
@@ -111,7 +90,7 @@ const FullPage = ({
           );
           setActiveMenu("project");
         } else if (destination.index === 2 && direction === "down") {
-          fullpage_slide(
+          handlePageSlide(
             "67%",
             origin.index,
             "moreUp",
@@ -124,9 +103,9 @@ const FullPage = ({
       render={() => {
         return (
           <div>
-            <Home ResultBoardWidth={ResultBoardWidth} />
-            <About ResultBoardWidth={ResultBoardWidth} />
-            <Project ResultBoardWidth={ResultBoardWidth} />
+            <Home boardWidth={boardWidth} />
+            <About boardWidth={boardWidth} />
+            <Project boardWidth={boardWidth} />
           </div>
         );
       }}

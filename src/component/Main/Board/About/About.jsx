@@ -1,16 +1,11 @@
-// redux
 import { useSelector, useDispatch } from "react-redux";
 import { AboutMenuClick } from "../../../../action";
-
-// css
 import "./About.css";
 
 const About = ({ AboutInBoardRef }) => {
   const dispatch = useDispatch();
-  const aboutMenuClick = (select) => {
-    dispatch(AboutMenuClick(select));
-  };
-  const selectMenu = useSelector((state) => state.AboutMenuClick);
+  const handleAboutMenuClick = (select) => dispatch(AboutMenuClick(select));
+  const selectedAboutMenu = useSelector((state) => state.AboutMenuClick);
 
   return (
     <div id="about" className="fixed-box" ref={AboutInBoardRef}>
@@ -23,8 +18,8 @@ const About = ({ AboutInBoardRef }) => {
           <div className="one">
             <div
               data-name="profile"
-              className={selectMenu.select === "profile" ? "on" : ""}
-              onClick={() => aboutMenuClick("profile")}
+              className={selectedAboutMenu.select === "profile" ? "on" : ""}
+              onClick={() => handleAboutMenuClick("profile")}
             >
               Profile
             </div>
@@ -32,8 +27,8 @@ const About = ({ AboutInBoardRef }) => {
           <div className="one">
             <div
               data-name="design"
-              className={selectMenu.select === "design" ? "on" : ""}
-              onClick={() => aboutMenuClick("design")}
+              className={selectedAboutMenu.select === "design" ? "on" : ""}
+              onClick={() => handleAboutMenuClick("design")}
             >
               Design
             </div>
@@ -41,15 +36,15 @@ const About = ({ AboutInBoardRef }) => {
           <div className="two">
             <div
               data-name="front_end"
-              className={selectMenu.select === "front_end" ? "on" : ""}
-              onClick={() => aboutMenuClick("front_end")}
+              className={selectedAboutMenu.select === "front_end" ? "on" : ""}
+              onClick={() => handleAboutMenuClick("front_end")}
             >
               Front-end
             </div>
             <div
               data-name="back_end"
-              className={selectMenu.select === "back_end" ? "on" : ""}
-              onClick={() => aboutMenuClick("back_end")}
+              className={selectedAboutMenu.select === "back_end" ? "on" : ""}
+              onClick={() => handleAboutMenuClick("back_end")}
             >
               Back-end
             </div>
@@ -57,8 +52,8 @@ const About = ({ AboutInBoardRef }) => {
           <div className="one">
             <div
               data-name="etc"
-              className={selectMenu.select === "etc" ? "on" : ""}
-              onClick={() => aboutMenuClick("etc")}
+              className={selectedAboutMenu.select === "etc" ? "on" : ""}
+              onClick={() => handleAboutMenuClick("etc")}
             >
               Etc
             </div>

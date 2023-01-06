@@ -1,39 +1,23 @@
-// react
 import Slider from "react-slick";
-
-// redux
 import { useSelector, useDispatch } from "react-redux";
 import { SetSlideNumber } from "../../../../action";
-
-// component
-import Slide from "./Slide/Slide";
-
-// css
 import "./Project.css";
-
-// json
-import ProjectArrays from "../../../../json/ProjectArray.json";
+import projectArrays from "../../../../json/projectArray.json";
 
 const Project = ({ ProjectInBoardRef }) => {
   const dispatch = useDispatch();
-  const setCount = (number) => {
-    dispatch(SetSlideNumber(number));
-  };
+  const setCount = (number) => dispatch(SetSlideNumber(number));
   const Count = useSelector((state) => state.SetSlideNumber);
 
   const setting = {
     speed: 500,
     swipeToSlide: true,
-    afterChange: (index) => {
-      setCount(index);
-    },
-    beforeChange: (index) => {
-      setCount(index);
-    },
+    afterChange: (index) => setCount(index),
+    beforeChange: (index) => setCount(index),
   };
 
-  const maxNumber = () => {
-    let number = ProjectArrays.length;
+  const returnLastProjectIndex = () => {
+    let number = projectArrays.length;
 
     if (number < 10) {
       number = "0" + String(number);
@@ -43,7 +27,8 @@ const Project = ({ ProjectInBoardRef }) => {
 
     return number;
   };
-  const currentNumber = () => {
+
+  const returnCurrentProjectIndex = () => {
     let number = Count.number + 1;
 
     if (number < 10) {
@@ -64,14 +49,42 @@ const Project = ({ ProjectInBoardRef }) => {
         <span className="type">INTRODUCING MY PROJECT</span>
         <p className="number">
           <span>
-            # {currentNumber()} / {maxNumber()}
+            # {returnCurrentProjectIndex()} / {returnLastProjectIndex()}
           </span>
-          <span>클릭해서 슬라이드를 넘겨주세요</span>
+          <span>슬라이드를 넘기면 다음 프로젝트를 볼 수 있어요</span>
         </p>
 
         <Slider {...setting}>
-          {ProjectArrays.map((ProjectArray) => {
-            return <Slide key={ProjectArray.id} ProjectArray={ProjectArray} />;
+          {projectArrays.map((project) => {
+            return (
+              <div className="slide" key={project.id}>
+                <p className="name">{project.name}</p>
+                <p className="skill">{project.skill}</p>
+                {project.desc.map((desc, index) => {
+                  return (
+                    <p key={index} className="desc">
+                      {desc}
+                    </p>
+                  );
+                })}
+                <div className="link">
+                  {project.link.map((link, index) => {
+                    return link.button === "서비스 종료" ||
+                      link.button === "비공개" ? (
+                      <span key={index}>{link.button}</span>
+                    ) : (
+                      <a
+                        key={index}
+                        href={link.button === "서비스 종료" ? "" : link.url}
+                        target="blank"
+                      >
+                        {link.button}
+                      </a>
+                    );
+                  })}
+                </div>
+              </div>
+            );
           })}
         </Slider>
       </div>

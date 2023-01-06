@@ -1,4 +1,3 @@
-// css
 import "./Home.css";
 
 const Home = ({ HomeInBoardRef }) => {
@@ -11,7 +10,9 @@ const Home = ({ HomeInBoardRef }) => {
           <br />
           PORTFOLIO
         </h3>
-        <p className="text">안녕하세요. 김태진의 포트폴리오 사이트입니다.</p>
+        <p className="text">
+          포트폴리오 최신화 날짜는 <b>2023. 01. 06</b> 입니다
+        </p>
       </div>
     </div>
   );

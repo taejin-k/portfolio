@@ -1,12 +1,50 @@
-#fullpage .section#project .result_board > .content{width: 90%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;}
-#fullpage .section#project .result_board > .content > p{font-size: 5.6rem; margin: 0 auto 60px; font-weight: bold; position: relative; max-width: 900px;}
-#fullpage .section#project .result_board > .content > div{width: 100%; max-width: 900px; max-height: calc(100vh - 45vh); box-shadow: 5px 5px 40px 3px #222; overflow: auto; margin: 0 auto; position: relative;}
-#fullpage .section#project .result_board > .content > div > img{width: 100%;}
-#fullpage .section#project .result_board > .content > div > span{position: absolute; top: 10px; right: 10px; background: #222; padding: 4px 6px 4px; border-radius: 3px; color: #fff; font-size: 1.1rem; border: 1px solid #fff;}
-
-/* width */
-#fullpage .section#project .result_board > .content > div.img_15{width: 100%; max-width:640px; margin: 0 auto;}
-
-/* scrollbar */
-.scrollbar_custom::-webkit-scrollbar{width: 7px;}
-.scrollbar_custom::-webkit-scrollbar-thumb{border-radius: 6px; background-color: #222;}
+#fullpage .section#project .result_board > .content {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#fullpage .section#project .result_board > .content > p {
+  font-size: 5.6rem;
+  margin: 0 auto 60px;
+  font-weight: bold;
+  position: relative;
+  max-width: 900px;
+}
+#fullpage .section#project .result_board > .content > div {
+  width: 100%;
+  max-width: 900px;
+  max-height: calc(100vh - 45vh);
+  box-shadow: 5px 5px 40px 3px #222;
+  overflow: auto;
+  margin: 0 auto;
+  position: relative;
+}
+#fullpage .section#project .result_board > .content > div > img {
+  width: 100%;
+}
+#fullpage .section#project .result_board > .content > div > span {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #222;
+  padding: 4px 6px 4px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 1.1rem;
+  border: 1px solid #fff;
+}
+#fullpage .section#project .result_board > .content > div.img_15 {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.scrollbar_custom::-webkit-scrollbar {
+  width: 7px;
+}
+.scrollbar_custom::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: #222;
+}
