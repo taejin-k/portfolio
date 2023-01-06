@@ -1,34 +1,23 @@
-// react
-import { useEffect } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { useEffect } from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Home from "./page/Home/Home";
+import ImgArrays from "./json/ImgArray.json";
 
-// page
-import Home from './page/Home/Home';
-import NotFound from './page/NotFound/NotFound';
-
-// json
-import ImgArrays from './json/ImgArray.json';
-
-function App() {
-
+const App = () => {
   useEffect(() => {
-    for (let i = 0; i < ImgArrays.length; i++) { 
+    for (let i = 0; i < ImgArrays.length; i++) {
       let img = new Image();
-      img.src = ImgArrays[i].name; 
-    } 
+      img.src = ImgArrays[i].name;
+    }
   }, []);
 
   return (
-    <div className='react_app'>
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
-        <Switch>
-          <Route path='/' exact={true} render={() => <Home />} />
-          <Route component={NotFound} />
-        </Switch>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <Switch>
+        <Route path="/" exact={true} render={() => <Home />} />
+      </Switch>
+    </BrowserRouter>
   );
-
-}
+};
 
 export default App;

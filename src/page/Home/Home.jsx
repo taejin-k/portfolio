@@ -1,23 +1,16 @@
-// react
-import { useState } from 'react';
-
-// component
-import Header from '../../component/Header/Header';
-import Main from '../../component/Main/Main';
-import Footer from '../../component/Footer/Footer';
+import { useState } from "react";
+import Header from "../../component/Header/Header";
+import Main from "../../component/Main/Main";
 
 const Home = () => {
+  const [activeMenu, setActiveMenu] = useState("home");
 
-	const [ ActiveName, setActiveName ] = useState('home');
-
-	return(
-		<div className='home'>
-			<Header ActiveName={ActiveName} setActiveName={setActiveName} />
-			<Main setActiveName={setActiveName} />
-			<Footer />
-		</div>
-	)
-
-}
+  return (
+    <div className="home">
+      <Header activeMenu={activeMenu} setActiveMenu={setActiveMenu} />
+      <Main setActiveMenu={setActiveMenu} />
+    </div>
+  );
+};
 
 export default Home;

@@ -1,28 +1,32 @@
-// react
-import { useRef, useState } from 'react';
+import { useRef, useState } from "react";
+import Board from "./Board/Board";
+import FullPage from "./FullPage/FullPage";
 
-// component
-import Board from './Board/Board';
-import FullPage from './FullPage/FullPage';
+const Main = ({ setActiveMenu }) => {
+  const BoardRef = useRef(null);
+  const HomeInBoardRef = useRef(null);
+  const AboutInBoardRef = useRef(null);
+  const ProjectInBoardRef = useRef(null);
+  const elementsInBoard = [HomeInBoardRef, AboutInBoardRef, ProjectInBoardRef];
+  const [pagingTopPosition, setPagingTopPosition] = useState("31.5%");
 
-const Main = ({ setActiveName }) => {
-
-    const BoardRef = useRef(null);
-    const HomeFixedBoxRef = useRef(null);
-    const AboutFixedBoxRef = useRef(null);
-    const ProjectFixedBoxRef = useRef(null);
-    const fixedBoxRefArray = [HomeFixedBoxRef, AboutFixedBoxRef, ProjectFixedBoxRef]
-    const [ PagingTop, setPagingTop ] = useState('31.5%');
-
-    return(
-        <div className='main'>
-            <main>
-                <h1 className="blind">포트폴리오 본문</h1>
-                <Board BoardRef={BoardRef} PagingTop={PagingTop} fixedBoxRefArray={fixedBoxRefArray} />
-                <FullPage BoardRef={BoardRef} setPagingTop={setPagingTop} fixedBoxRefArray={fixedBoxRefArray} setActiveName={setActiveName} />
-            </main>
-        </div>              
-    )
-}
+  return (
+    <div className="main">
+      <main>
+        <Board
+          BoardRef={BoardRef}
+          pagingTopPosition={pagingTopPosition}
+          elementsInBoard={elementsInBoard}
+        />
+        <FullPage
+          BoardRef={BoardRef}
+          setPagingTopPosition={setPagingTopPosition}
+          elementsInBoard={elementsInBoard}
+          setActiveMenu={setActiveMenu}
+        />
+      </main>
+    </div>
+  );
+};
 
 export default Main;

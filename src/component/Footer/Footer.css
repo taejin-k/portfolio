@@ -1,5 +1,0 @@
-@charset "utf-8";
-
-/*footer*/
-footer{position: fixed; bottom: 40px; left: 50px;}
-footer > p{font-size: 1.4rem; font-family: 'Noto Sans KR', sans-serif;}
