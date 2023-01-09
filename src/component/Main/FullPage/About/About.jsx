@@ -3,8 +3,8 @@ import Profile from "./Profile/Profile";
 import Design from "./Design/Design";
 import FrontEnd from "./FrontEnd/FrontEnd";
 import BackEnd from "./BackEnd/BackEnd";
-import Etc from "./Etc/Etc";
 import "./About.css";
+import History from "./History/History";
 
 const About = ({ boardWidth }) => {
   const selectedAboutMenu = useSelector((state) => state.AboutMenuClick);
@@ -14,10 +14,10 @@ const About = ({ boardWidth }) => {
       <div className="background"></div>
       <div className="result_board" style={{ width: boardWidth }}>
         {selectedAboutMenu.select === "profile" && <Profile />}
+        {selectedAboutMenu.select === "history" && <History />}
         {selectedAboutMenu.select === "design" && <Design />}
         {selectedAboutMenu.select === "front_end" && <FrontEnd />}
         {selectedAboutMenu.select === "back_end" && <BackEnd />}
-        {selectedAboutMenu.select === "etc" && <Etc />}
       </div>
     </div>
   );

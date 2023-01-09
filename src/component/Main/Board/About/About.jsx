@@ -49,15 +49,6 @@ const About = ({ AboutInBoardRef }) => {
               Back-end
             </div>
           </div>
-          <div className="one">
-            <div
-              data-name="etc"
-              className={selectedAboutMenu.select === "etc" ? "on" : ""}
-              onClick={() => handleAboutMenuClick("etc")}
-            >
-              Etc
-            </div>
-          </div>
         </div>
       </div>
     </div>

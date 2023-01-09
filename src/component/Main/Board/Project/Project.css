@@ -40,18 +40,28 @@
 #board > #project > div.detail .slide .name {
   font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 14px;
+  margin-bottom: 6px;
 }
 #board > #project > div.detail .slide .skill {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 14px;
+  margin-bottom: 40px;
 }
 #board > #project > div.detail .slide .desc {
   font-size: 1.5rem;
   margin-bottom: 0;
   font-weight: 500;
 }
+
+#board > #project > div.detail .slide .desc .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #222;
+  display: inline-block;
+  margin-left: 14px;
+}
+
 #board > #project > div.detail .slide .desc:last-of-type {
   font-size: 1.5rem;
   margin-bottom: 20px;

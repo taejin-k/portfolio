@@ -1,8 +1,21 @@
 #fullpage .section#about .result_board > div.front_end > .wrap {
   width: 560px;
 }
+#fullpage .section#about .result_board > div.front_end > .wrap .icon {
+  width: 500px !important;
+  margin: 0 auto;
+}
 #fullpage .section#about .result_board > div.front_end > .wrap .icon > div {
   margin-bottom: 25px;
+}
+#fullpage
+  .section#about
+  .result_board
+  > div.front_end
+  > .wrap
+  .icon
+  > div:nth-of-type(5) {
+  margin-bottom: 0;
 }
 #fullpage
   .section#about

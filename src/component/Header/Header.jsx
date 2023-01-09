@@ -135,7 +135,7 @@ const HeaderStyled = styled.header`
     width: 40%;
     height: calc(100vh - 60px);
     z-index: 3;
-    transition: 0.8s ease;
+    transition: 0.5s ease;
     opacity: 0;
 
     ul {

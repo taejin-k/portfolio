@@ -9,24 +9,6 @@ const FrontEnd = () => {
           <div className="icon">
             <div>
               <div className="img">
-                <img src="img/react.png" alt="react" />
-              </div>
-              <p>REACT</p>
-            </div>
-            <div>
-              <div className="img">
-                <img src="img/js.png" alt="js" />
-              </div>
-              <p>JAVASCRIPT</p>
-            </div>
-            <div>
-              <div className="img">
-                <img src="img/ts.png" alt="ts" />
-              </div>
-              <p>TYPESCRIPT</p>
-            </div>
-            <div>
-              <div className="img">
                 <img src="img/html.png" alt="html" />
               </div>
               <p>HTML</p>
@@ -45,38 +27,36 @@ const FrontEnd = () => {
             </div>
             <div>
               <div className="img">
-                <img src="img/jquery.png" alt="jquery" />
+                <img src="img/js.png" alt="js" />
               </div>
-              <p>JQUERY</p>
+              <p>JAVASCRIPT</p>
             </div>
             <div>
               <div className="img">
-                <img src="img/wordpress.png" alt="wordpress" />
+                <img src="img/ts.png" alt="ts" />
               </div>
-              <p>WORDPRESS</p>
+              <p>TYPESCRIPT</p>
             </div>
             <div>
               <div className="img">
-                <img src="img/gnuboard.png" alt="gnuboard" />
+                <img src="img/react.png" alt="react" />
               </div>
-              <p>GNUBOARD</p>
-            </div>
-            <div>
-              <div className="img">
-                <img src="img/bootstrap.png" alt="bootstrap" />
-              </div>
-              <p>BOOTSTRAP</p>
+              <p>REACT</p>
             </div>
           </div>
           <div className="desc">
             <p>
-              React와 Javascript, Typescript 기반으로 전반적인 Front-End 개발이
-              가능합니다.
+              React와 Javascript, Typescript를 기반으로 전반적인 Front-End
+              개발에 능숙합니다. 또한, 웹뷰를 이용한 AOS, IOS 하이브리드 앱 제작
+              경험이 있습니다.
             </p>
             <p>
-              HTML과 CSS 그리고 jQuery를 이용한 퍼블리싱을 다수 진행한 경험이
-              있으며, Wordpress, Gnuboard, Bootstrap으로 사이트를 제작할 수
-              있습니다.
+              react-redux, redux-toolkit, react-query 등 다양한 상태 관리 도구를
+              사용할 수 있습니다.
+            </p>
+            <p>
+              HTML과 CSS 그리고 Javascript를 이용한 퍼블리싱을 다수 진행한
+              경험이 있으며, 사용자 친화적 UX/UI 개발에 익숙합니다.
             </p>
           </div>
         </div>

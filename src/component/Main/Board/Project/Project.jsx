@@ -63,6 +63,7 @@ const Project = ({ ProjectInBoardRef }) => {
                 {project.desc.map((desc, index) => {
                   return (
                     <p key={index} className="desc">
+                      <span className="dot"></span>
                       {desc}
                     </p>
                   );
