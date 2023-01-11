@@ -2,7 +2,7 @@
   margin-bottom: 100px;
 }
 #board > #project > div.detail > p {
-  margin-bottom: 14px;
+  margin-bottom: 20px;
   position: relative;
   font-family: "Noto Sans KR", sans-serif;
 }
@@ -38,19 +38,20 @@
   font-family: "Noto Sans KR", sans-serif;
 }
 #board > #project > div.detail .slide .name {
-  font-size: 3rem;
+  font-size: 3.2rem;
   font-weight: 700;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 #board > #project > div.detail .slide .skill {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 #board > #project > div.detail .slide .desc {
   font-size: 1.5rem;
-  margin-bottom: 0;
+  margin-bottom: 6px;
   font-weight: 500;
+  display: flex;
 }
 
 #board > #project > div.detail .slide .desc .dot {
@@ -59,12 +60,16 @@
   border-radius: 50%;
   background: #222;
   display: inline-block;
-  margin-left: 14px;
+  margin: 10px 8px 0 14px;
+}
+
+#board > #project > div.detail .slide .desc .dot + div {
+  width: calc(100% - 28px);
 }
 
 #board > #project > div.detail .slide .desc:last-of-type {
   font-size: 1.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 #board > #project > div.detail .slide .link > a {
   border: 1px solid rgba(0, 0, 0, 0.5);
@@ -98,11 +103,11 @@
 }
 
 .slick-prev {
-  top: -22px;
+  top: -27px;
   left: 70px;
 }
 .slick-next {
-  top: -22px;
+  top: -27px;
   left: 92px;
 }
 .slick-next:before,

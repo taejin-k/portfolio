@@ -64,7 +64,7 @@ const Project = ({ ProjectInBoardRef }) => {
                   return (
                     <p key={index} className="desc">
                       <span className="dot"></span>
-                      {desc}
+                      <div>{desc}</div>
                     </p>
                   );
                 })}

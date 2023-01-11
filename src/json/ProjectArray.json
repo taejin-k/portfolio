@@ -4,6 +4,7 @@
     "name": "조선일보 건강챌린지",
     "skill": "REACT / TYPESCRIPT",
     "desc": [
+      "",
       "웹뷰를 이용한 하이브리드 앱으로 제작",
       "원하는 REPOSITORY를 관심 목록에 저장하고, 해당 REPOSITORY의 최신 이슈를 한눈에 살펴볼 수 있습니다."
     ],
