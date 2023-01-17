@@ -58,6 +58,7 @@ const Project = ({ ProjectInBoardRef }) => {
           {projectArrays.map((project) => {
             return (
               <div className="slide" key={project.id}>
+                <p className="company">{project.company}</p>
                 <p className="name">{project.name}</p>
                 <p className="skill">{project.skill}</p>
                 {project.desc.map((desc, index) => {

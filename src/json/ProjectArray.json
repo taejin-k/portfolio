@@ -1,47 +1,35 @@
 [
   {
     "id": 0,
+    "company": "(주)빅케어",
     "name": "조선일보 건강챌린지",
     "skill": "REACT / TYPESCRIPT",
     "desc": [
-      "",
-      "웹뷰를 이용한 하이브리드 앱으로 제작",
-      "원하는 REPOSITORY를 관심 목록에 저장하고, 해당 REPOSITORY의 최신 이슈를 한눈에 살펴볼 수 있습니다."
+      "조선일보에 포함된, 건강에 관련된 여러가지 챌린지에 도전할 수 있는 서비스입니다. 챌린지 인증 사진을 찍어 유저들과 공유할 수 있으며, 챌린지를 완료하면 다양한 경품을 받을 수 있습니다.",
+      "트로트 가수 김동현, 이솔로몬을 비롯해, 야핏, 바디프렌드, 웅진, 아시아프 등 다양한 샐럽과 기업이 참여했습니다.",
+      "웹뷰를 이용해서 제작한 하이브리드 앱이며, 조선일보의 앱 개발자들과 데이터를 주고 받거나 메소드를 실행하기 위해 WebBridge를 사용했습니다.",
+      "조선일보 앱 설치 후, 하단 메뉴에 건강챌린지 클릭 후 이용할 수 있습니다."
     ],
-    "link": [
-      {
-        "url": "https://master.dactdpkklhe9p.amplifyapp.com/",
-        "button": "VIEW"
-      },
-      {
-        "url": "https://github.com/rhesus2017/git_search_typescript",
-        "button": "GITHUB"
-      }
-    ]
-  },
-  {
-    "id": 0,
-    "name": "REPOSITORY 검색 사이트",
-    "skill": "REACT / HTML / CSS / TYPESCRIPT",
-    "desc": [
-      "GITHUB의 REPOSITORY를 검색할 수 있는 웹 사이트입니다.",
-      "원하는 REPOSITORY를 관심 목록에 저장하고, 해당 REPOSITORY의 최신 이슈를 한눈에 살펴볼 수 있습니다."
-    ],
-    "link": [
-      {
-        "url": "https://master.dactdpkklhe9p.amplifyapp.com/",
-        "button": "VIEW"
-      },
-      {
-        "url": "https://github.com/rhesus2017/git_search_typescript",
-        "button": "GITHUB"
-      }
-    ]
+    "link": []
   },
   {
     "id": 1,
-    "name": "유튜브(CLONE)",
-    "skill": "REACT / HTML / CSS / JAVASCRIPT",
+    "company": "(주)빅케어",
+    "name": "빅케어 기업검진 관리자",
+    "skill": "REACT / TYPESCRIPT / ANT DESIGN",
+    "desc": [
+      "10개 그룹사 52개의 기업과 전국 122개의 병원을 연결해, 기업직원들의 건강검진 예약을 도와주는 빅케어 기업검진의 관리자 웹입니다.",
+      "별개의 디자인 없이 Ant Design으로 제작됐으며 DatePicker, Graph, Table, Description을 포함한 다양한 기능을 구현했습니다.",
+      "전체 서비스의 약 70%에 해당하는 검진 예약, 검진 대상자, 검진 일정, 통계 부분을 개발했습니다.",
+      "데이터 양이 많아 서비스 속도가 느린 관리자 웹의 불편함을 줄이기 위해 Caching을 이용했으며 Paging과 Filtering이 가능하도록 백엔드 개발자에게 요청해 서비스 속도를 개선했습니다."
+    ],
+    "link": []
+  },
+  {
+    "id": 2,
+    "company": "개인 포트폴리오",
+    "name": "REPOSITORY를 검색해보자!",
+    "skill": "REACT / TYPESCRIPT",
     "desc": [
       "인기 동영상 가져오기, 검색 기능을 구현한 유튜브 클론 웹 사이트입니다.",
       "Intersection Observer를 이용한 Skeleton Loading로 로딩 처리했습니다."

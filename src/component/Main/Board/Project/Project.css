@@ -42,6 +42,11 @@
   font-weight: 700;
   margin-bottom: 4px;
 }
+#board > #project > div.detail .slide .company {
+  font-size: 1.4rem;
+  margin-left: 4px;
+  font-weight: 500;
+}
 #board > #project > div.detail .slide .skill {
   font-size: 2rem;
   font-weight: 700;
@@ -49,7 +54,7 @@
 }
 #board > #project > div.detail .slide .desc {
   font-size: 1.5rem;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
   font-weight: 500;
   display: flex;
 }
@@ -60,7 +65,7 @@
   border-radius: 50%;
   background: #222;
   display: inline-block;
-  margin: 10px 8px 0 14px;
+  margin: 9px 8px 0 14px;
 }
 
 #board > #project > div.detail .slide .desc .dot + div {
@@ -69,8 +74,8 @@
 
 #board > #project > div.detail .slide .desc:last-of-type {
   font-size: 1.5rem;
-  margin-bottom: 50px;
 }
+
 #board > #project > div.detail .slide .link > a {
   border: 1px solid rgba(0, 0, 0, 0.5);
   border-radius: 6px;
@@ -78,6 +83,7 @@
   display: inline-block;
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
+  margin-top: 50px;
   margin-right: 6px;
 }
 #board > #project > div.detail .slide .link > a:first-of-type {
