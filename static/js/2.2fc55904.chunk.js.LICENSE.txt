@@ -5,6 +5,12 @@ object-assign
 */
 
 /*!
+	Copyright (c) 2018 Jed Watson.
+	Licensed under the MIT License (MIT), see
+	http://jedwatson.github.io/classnames
+*/
+
+/*!
   * Scrolloverflow 2.0.6 module for fullPage.js >= 3
   * https://github.com/alvarotrigo/fullPage.js
   * @license MIT licensed
@@ -19,12 +25,6 @@ object-assign
   *
   * Copyright (C) 2018 alvarotrigo.com - A project by Alvaro Trigo
   */
-
-/*!
-  Copyright (c) 2018 Jed Watson.
-  Licensed under the MIT License (MIT), see
-  http://jedwatson.github.io/classnames
-*/
 
 /*!
  * @fullpage/react-fullpage 0.1.19
@@ -60,6 +60,15 @@ object-assign
 
 /** @license React v17.0.2
  * react-dom.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v17.0.2
+ * react-is.production.min.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
