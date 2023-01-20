@@ -2,7 +2,7 @@ import Slider from "react-slick";
 import { useSelector, useDispatch } from "react-redux";
 import { SetSlideNumber } from "../../../../action";
 import "./Project.css";
-import projectArrays from "../../../../json/projectArray.json";
+import projectArrays from "../../../../json/ProjectArray.json";
 
 const Project = ({ ProjectInBoardRef }) => {
   const dispatch = useDispatch();

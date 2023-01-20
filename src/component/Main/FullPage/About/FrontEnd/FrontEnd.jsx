@@ -43,6 +43,12 @@ const FrontEnd = () => {
               </div>
               <p>REACT</p>
             </div>
+            <div>
+              <div className="img">
+                <img src="img/antd.png" alt="antd" />
+              </div>
+              <p>ANT DESIGN</p>
+            </div>
           </div>
           <div className="desc">
             <p>

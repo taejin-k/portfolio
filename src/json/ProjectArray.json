@@ -31,16 +31,17 @@
     "name": "REPOSITORY를 검색해보자!",
     "skill": "REACT / TYPESCRIPT",
     "desc": [
-      "인기 동영상 가져오기, 검색 기능을 구현한 유튜브 클론 웹 사이트입니다.",
-      "Intersection Observer를 이용한 Skeleton Loading로 로딩 처리했습니다."
+      "레포지토리를 검색하여 해당 깃허브로 이동할 수 있도록 도와주는 웹입니다.",
+      "관심 레포지토리를 최대 5개까지 저장할 수 있으며, 관심 레포지토리들의 최신 이슈들을 한 눈에 살펴볼 수 있습니다.",
+      "일반적인 Paging 방식이 해당 웹에 어울리지 않는다고 생각했기에, IntersectionObserver를 이용해 Infinity Scroll을 구현했습니다."
     ],
     "link": [
       {
-        "url": "https://master.d2kw6dwgavlv09.amplifyapp.com/",
+        "url": "https://master.d3dqp3b0p2a5nv.amplifyapp.com/",
         "button": "VIEW"
       },
       {
-        "url": "https://github.com/rhesus2017/youtube_clone_coding",
+        "url": "https://github.com/rhesus2017/search_github",
         "button": "GITHUB"
       }
     ]

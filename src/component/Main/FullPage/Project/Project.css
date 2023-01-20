@@ -17,7 +17,7 @@
   width: 100%;
   max-width: 900px;
   max-height: calc(100vh - 45vh);
-  box-shadow: 5px 5px 40px 3px #222;
+  box-shadow: 5px 5px 40px 3px #444;
   overflow: auto;
   margin: 0 auto;
   position: relative;
