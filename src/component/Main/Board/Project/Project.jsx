@@ -1,20 +1,32 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import Slider from "react-slick";
 import { useSelector, useDispatch } from "react-redux";
-import { SetSlideNumber } from "../../../../action";
+import { SetSlideCheck, SetSlideNumber } from "../../../../action";
 import "./Project.css";
 import projectArrays from "../../../../json/ProjectArray.json";
+import { useEffect } from "react";
 
 const Project = ({ ProjectInBoardRef }) => {
   const dispatch = useDispatch();
   const setCount = (number) => dispatch(SetSlideNumber(number));
+  const setLoading = (check) => dispatch(SetSlideCheck(check));
   const Count = useSelector((state) => state.SetSlideNumber);
 
   const setting = {
     speed: 500,
     swipeToSlide: true,
-    afterChange: (index) => setCount(index),
-    beforeChange: (index) => setCount(index),
+
+    afterChange: (index) => {
+      setCount(index);
+    },
+    beforeChange: () => {
+      setLoading(true);
+    },
   };
+
+  useEffect(() => {
+    setLoading(false);
+  }, [Count]);
 
   const returnLastProjectIndex = () => {
     let number = projectArrays.length;

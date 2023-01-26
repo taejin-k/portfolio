@@ -6,14 +6,24 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
-#fullpage .section#project .result_board > .content > p {
+
+#fullpage .section#project .result_board > .content > .contentWrap {
+  display: none;
+}
+
+#fullpage .section#project .result_board > .content > .contentWrap.false {
+  display: block;
+}
+
+#fullpage .section#project .result_board > .content > .contentWrap > p {
   font-size: 5.6rem;
   margin: 0 auto 60px;
   font-weight: bold;
   position: relative;
   max-width: 900px;
 }
-#fullpage .section#project .result_board > .content > div {
+
+#fullpage .section#project .result_board > .content > .contentWrap > div {
   width: 100%;
   max-width: 900px;
   max-height: calc(100vh - 45vh);
@@ -22,10 +32,30 @@
   margin: 0 auto;
   position: relative;
 }
-#fullpage .section#project .result_board > .content > div > img {
+
+#fullpage .section#project .result_board > .content > .contentWrap > div > img {
   width: 100%;
+  display: none;
 }
-#fullpage .section#project .result_board > .content > div > span {
+
+#fullpage
+  .section#project
+  .result_board
+  > .content
+  > .contentWrap
+  > div
+  > img.active {
+  width: 100%;
+  display: block;
+}
+
+#fullpage
+  .section#project
+  .result_board
+  > .content
+  > .contentWrap
+  > div
+  > span {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -36,15 +66,44 @@
   font-size: 1.1rem;
   border: 1px solid #fff;
 }
-#fullpage .section#project .result_board > .content > div.img_15 {
-  width: 100%;
-  max-width: 640px;
-  margin: 0 auto;
+
+#fullpage .section#project .result_board > .content > .contentWrap > div.img_4 {
+  max-width: 480px;
+  max-height: 70vh;
 }
+
+#fullpage .section#project .result_board > .content > .contentWrap > div.img_0 {
+  max-width: 480px;
+  max-height: 70vh;
+}
+
 .scrollbar_custom::-webkit-scrollbar {
   width: 7px;
 }
+
 .scrollbar_custom::-webkit-scrollbar-thumb {
   border-radius: 6px;
   background-color: #222;
+}
+
+.loadingWrap {
+  box-shadow: none !important;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.loadingWrap.true {
+  display: flex;
+}
+
+.ant-spin-dot-item {
+  background: #222 !important;
+}
+
+.ant-spin-text {
+  margin-top: 20px;
+  color: #222;
 }
