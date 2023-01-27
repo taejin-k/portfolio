@@ -10,9 +10,6 @@ const Profile = () => {
             <span className="span">NAME</span>김태진
           </p>
           <p className="p">
-            <span className="span">ADDRESS</span>경기도 성남시 태평동
-          </p>
-          <p className="p">
             <span className="span">E-MAIL</span>rhesus2016@gmail.com
           </p>
           <p className="p">
@@ -39,9 +36,9 @@ const Profile = () => {
             </div>
             <div>
               <p className="history">
-                2018.05 ~ 2021.09 : (주)피플아이
-                <br />
                 2021.12 ~ 2023.04 : (주)빅케어
+                <br />
+                2018.05 ~ 2021.09 : (주)피플아이
               </p>
             </div>
           </div>
