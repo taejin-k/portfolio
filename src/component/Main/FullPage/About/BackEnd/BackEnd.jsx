@@ -32,7 +32,7 @@ const BackEnd = () => {
               간단한 웹 개발을 할 수 있습니다.
             </p>
             <p>
-              Python으로 Web Crawler를 만들 수 있습니다. 또한, Uiautomation을
+              Python으로 Web Crawler를 만들 수 있습니다. 그리고 Uiautomation을
               기반으로 웹 매크로 제작도 가능합니다.
             </p>
             <p>
