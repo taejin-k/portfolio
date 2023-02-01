@@ -29,7 +29,7 @@ const BackEnd = () => {
           <div className="desc">
             <p>
               회원 가입, 로그인, 사용자 관리, 실시간 채팅 및 메세지 보내기 등
-              간단한 웹 개발을 할 수 있습니다.
+              간단한 웹 개발이 가능합니다.
             </p>
             <p>
               Python으로 Web Crawler를 만들 수 있습니다. 그리고 Uiautomation을

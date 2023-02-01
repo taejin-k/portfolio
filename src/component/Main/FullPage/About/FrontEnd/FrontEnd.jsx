@@ -47,11 +47,11 @@ const FrontEnd = () => {
             <p>
               React-redux, Redux-toolkit, React-query 등 다양한 상태 관리 도구를
               사용할 수 있습니다. CSS-in-JS로는 Styled-Component를 주로
-              사용했습니다.
+              사용합니다.
             </p>
             <p>
-              웹뷰를 이용한 AOS, IOS 하이브리드 앱 제작 경험이 있습니다. Ant
-              Design 사용에 능숙하며, 이를 이용한 정보 시각화에도 능합니다.
+              웹뷰를 이용한 AOS, IOS 하이브리드 앱 제작 경험이 있으며, Ant
+              Design 사용에 능숙합니다.
             </p>
           </div>
         </div>
