@@ -40,18 +40,16 @@ const FrontEnd = () => {
           </div>
           <div className="desc">
             <p>
-              React와 Typescript, Javascript를 기반으로 전반적인 Front-End
-              개발에 능숙하며, HTML과 CSS, Sass를 이용한 퍼블리싱을 다수 진행한
-              경험이 있습니다.
+              React, Typescript로 개발하며 React-redux, Redux-toolkit,
+              React-query 등 다양한 상태 관리 도구를 사용할 수 있습니다.
             </p>
             <p>
-              React-redux, Redux-toolkit, React-query 등 다양한 상태 관리 도구를
-              사용할 수 있습니다. CSS-in-JS 라이브러리로 Styled-Component,
-              Emotion을 사용합니다.
+              CSS-in-JS 라이브러리 Styled-Component, Emotion로 컴포넌트를
+              스타일링 가능하고, Ant Design 사용에 능숙합니다.
             </p>
             <p>
-              웹뷰를 이용한 AOS, IOS 하이브리드 앱 제작 경험이 있으며, Ant
-              Design 사용에 능숙합니다.
+              WebView를 이용한 하이브리드 앱 개발, 배포, 운영 경험이 있으며,
+              HTML과 CSS, Sass를 이용한 퍼블리싱을 다수 진행했습니다.
             </p>
           </div>
         </div>

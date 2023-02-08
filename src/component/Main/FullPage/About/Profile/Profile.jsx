@@ -25,6 +25,16 @@ const Profile = () => {
               https://github.com/rhesus2017
             </a>
           </p>
+          <p className="p">
+            <span className="span">NOTION RESUME</span>
+            <a
+              href="https://www.notion.so/55acc9e9fcb1413eb64499131b58ad5d"
+              rel="noreferrer"
+              target="_blank"
+            >
+              노션 이력서로 보기
+            </a>
+          </p>
           <span>*</span>
           <div>
             <div>
