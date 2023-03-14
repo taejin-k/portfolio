@@ -4,15 +4,15 @@ import Home from "./page/Home/Home";
 import ImgArrays from "./json/ImgArray.json";
 
 const App = () => {
-  // useEffect(() => {
-  //   for (let i = 0; i < ImgArrays.length; i++) {
-  //     let img = new Image();
-  //     img.src = ImgArrays[i].name;
-  //   }
-  // }, []);
+  useEffect(() => {
+    for (let i = 0; i < ImgArrays.length; i++) {
+      let img = new Image();
+      img.src = ImgArrays[i].name;
+    }
+  }, []);
 
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter>
       <Switch>
         <Route path="/" exact={true} render={() => <Home />} />
       </Switch>
