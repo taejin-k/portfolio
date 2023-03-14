@@ -2,7 +2,6 @@ import { Spin } from "antd";
 import { useRef, useEffect } from "react";
 import { useSelector } from "react-redux";
 import "./Project.css";
-import background_project from "../img/background_project.jpeg";
 
 const Project = ({ boardWidth }) => {
   const imgBoxRef = useRef(null);
@@ -18,7 +17,7 @@ const Project = ({ boardWidth }) => {
       <div
         className="background"
         style={{
-          background: `url(${background_project}) no-repeat center`,
+          background: `url(img/background_project.jpeg) no-repeat center`,
         }}
       ></div>
       <div className="result_board" style={{ width: boardWidth }}>

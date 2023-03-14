@@ -1,5 +1,4 @@
 import "./Home.css";
-import background_home from "../img/background_home.jpeg";
 
 const Home = ({ boardWidth }) => {
   return (
@@ -7,7 +6,7 @@ const Home = ({ boardWidth }) => {
       <div
         className="background"
         style={{
-          background: `url(${background_home}) no-repeat center`,
+          background: `url(img/background_home.jpeg) no-repeat center`,
         }}
       ></div>
       <div className="result_board" style={{ width: boardWidth }}></div>

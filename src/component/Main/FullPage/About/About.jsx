@@ -4,7 +4,6 @@ import Design from "./Design/Design";
 import FrontEnd from "./FrontEnd/FrontEnd";
 import BackEnd from "./BackEnd/BackEnd";
 import "./About.css";
-import background_about from "../img/background_about.jpeg";
 
 const About = ({ boardWidth }) => {
   const selectedAboutMenu = useSelector((state) => state.AboutMenuClick);
@@ -14,7 +13,7 @@ const About = ({ boardWidth }) => {
       <div
         className="background"
         style={{
-          background: `url(${background_about}) no-repeat center`,
+          background: `url(img/background_about.jpeg) no-repeat center`,
         }}
       ></div>
       <div className="result_board" style={{ width: boardWidth }}>
