@@ -6,11 +6,11 @@
     "skill": "REACT / TYPESCRIPT",
     "desc": [
       "건강 챌린지에 도전할 수 있는 조선일보 앱 서비스입니다. 인증 사진을 회원들과 공유할 수 있으며, 많은 샐럽과 다양한 기업이 참여했습니다.",
-      "React와 Typescript로 전반적인 프론트엔드를 개발했습니다.ㅍ",
+      "React와 Typescript로 전반적인 프론트엔드를 개발했습니다.",
       "React-query와 Redux-Toolkit을 사용하여 서버와 클라이언트의 상태 관리를 구분했습니다.",
       "WebView를 기반으로 한 하이브리드 앱으로 제작됐으며, 네이티브 앱과 유사한 사용자 경험을 주기 위해 다양한 페이지 전환 애니메이션을 추가했습니다.",
       "각 네이티브에 앱에 맞는 Bridge 통신을 구현했고, IOS Safe Area에 대응 가능한 화면을 제작했습니다.",
-      "불안정한 서버에 대한 사용자 경험 개선 및 향상을 위해 React-query의 query caching과 Accurate Skeleton Loading, Image Preloading를 구현 및 적용했습니다."
+      "불안정한 서버에 대한 사용자 경험 개선 및 향상을 위해 React-query의 query caching으로 불필요한 로딩 시간을 줄였으며, Accurate Skeleton Loading, Image Preloading를 구현 및 적용했습니다."
     ],
     "link": []
   },
