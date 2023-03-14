@@ -13,7 +13,8 @@ const About = ({ boardWidth }) => {
       <div
         className="background"
         style={{
-          background: `url(img/background_about.jpeg) no-repeat center`,
+          background: `url(../img/background_about.jpeg) no-repeat center`,
+          backgroundSize: "cover",
         }}
       ></div>
       <div className="result_board" style={{ width: boardWidth }}>
