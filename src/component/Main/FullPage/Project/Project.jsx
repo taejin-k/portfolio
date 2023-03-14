@@ -15,7 +15,7 @@ const Project = ({ boardWidth }) => {
   return (
     <div className="section" id="project" data-anchor="project_page">
       <div className="background">
-        <img src={"img/background_project.jpeg"} alt="project" />
+        <img src={"img/slide_0.jpg"} alt="project" />
       </div>
       <div className="result_board" style={{ width: boardWidth }}>
         <div className="content">
@@ -53,36 +53,6 @@ const Project = ({ boardWidth }) => {
                 src={"img/slide_3.jpg"}
                 alt="slide"
                 className={`${Count.number === 3 && "active"}`}
-              />
-              <img
-                src={"img/slide_4.jpg"}
-                alt="slide"
-                className={`${Count.number === 4 && "active"}`}
-              />
-              <img
-                src={"img/slide_5.jpg"}
-                alt="slide"
-                className={`${Count.number === 5 && "active"}`}
-              />
-              <img
-                src={"img/slide_6.jpg"}
-                alt="slide"
-                className={`${Count.number === 6 && "active"}`}
-              />
-              <img
-                src={"img/slide_7.jpg"}
-                alt="slide"
-                className={`${Count.number === 7 && "active"}`}
-              />
-              <img
-                src={"img/slide_8.jpg"}
-                alt="slide"
-                className={`${Count.number === 8 && "active"}`}
-              />
-              <img
-                src={"img/slide_9.jpg"}
-                alt="slide"
-                className={`${Count.number === 9 && "active"}`}
               />
             </div>
           </div>
