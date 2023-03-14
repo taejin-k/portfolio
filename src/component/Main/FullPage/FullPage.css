@@ -21,12 +21,15 @@
 }
 #fullpage #home .background {
   background-size: cover;
+  overflow: hidden;
 }
 #fullpage #about .background {
   background-size: cover;
+  overflow: hidden;
 }
 #fullpage #project .background {
   background-size: cover;
+  overflow: hidden;
 }
 #fp-nav.fp-right {
   right: -85px !important;

@@ -14,13 +14,9 @@ const Project = ({ boardWidth }) => {
 
   return (
     <div className="section" id="project" data-anchor="project_page">
-      <div
-        className="background"
-        style={{
-          background: `url(../img/background_project.jpeg) no-repeat center`,
-          backgroundSize: "cover",
-        }}
-      ></div>
+      <div className="background">
+        <img src="img/background_project.jpeg" alt="project" />
+      </div>
       <div className="result_board" style={{ width: boardWidth }}>
         <div className="content">
           <div className={`loadingWrap ${Loading.check}`}>

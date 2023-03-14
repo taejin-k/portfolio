@@ -10,13 +10,9 @@ const About = ({ boardWidth }) => {
 
   return (
     <div className="section" id="about" data-anchor="about_page">
-      <div
-        className="background"
-        style={{
-          background: `url(../img/background_about.jpeg) no-repeat center`,
-          backgroundSize: "cover",
-        }}
-      ></div>
+      <div className="background">
+        <img src="img/background_about.jpeg" alt="about" />
+      </div>
       <div className="result_board" style={{ width: boardWidth }}>
         {selectedAboutMenu.select === "profile" && <Profile />}
         {selectedAboutMenu.select === "design" && <Design />}
