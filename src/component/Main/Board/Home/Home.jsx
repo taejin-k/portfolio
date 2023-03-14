@@ -11,7 +11,7 @@ const Home = ({ HomeInBoardRef }) => {
           PORTFOLIO
         </h3>
         <p className="text">
-          포트폴리오 최신화 날짜는 <b>2023. 03. 14</b> 입니다
+          포트폴리오 최신화 날짜는 <b>2023. 02. 08</b> 입니다
         </p>
       </div>
     </div>

@@ -45,7 +45,7 @@ const FrontEnd = () => {
             </p>
             <p>
               CSS-in-JS 라이브러리 Styled-Component, Emotion로 컴포넌트를
-              스타일링 가능하고, 필요 시 Ant Design도 사용할 수 있습니다.
+              스타일링 가능하고, Ant Design 사용에 능숙합니다.
             </p>
             <p>
               WebView를 이용한 하이브리드 앱 개발, 배포, 운영 경험이 있으며,
