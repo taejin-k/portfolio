@@ -15,7 +15,7 @@ const Project = ({ boardWidth }) => {
   return (
     <div className="section" id="project" data-anchor="project_page">
       <div className="background">
-        <img src="img/background_project.jpeg" alt="project" />
+        <img src={"img/background_project.jpeg"} alt="project" />
       </div>
       <div className="result_board" style={{ width: boardWidth }}>
         <div className="content">
